@@ -1,0 +1,119 @@
+[appendix]
+[[GenericProfiles]]
+= DGIWG Generic profiles examples
+
+
+.elevationAnalysis.xml
+[source,xml]
+----
+<wps:GenericProcess xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+  <ows:Title>Elevation analysis</ows:Title>
+  <ows:Abstract> It provides lowest and highest point(s) on a given area.</ows:Abstract>
+  <ows:Keywords>
+    <ows:Keyword>elevation</ows:Keyword>
+    <ows:Keyword>analysis</ows:Keyword>
+    <ows:Keyword>highest point</ows:Keyword>
+    <ows:Keyword>lowest point</ows:Keyword>
+  </ows:Keywords>
+  <ows:Identifier>http://www.dgiwg.org/service/processing/process/elevationanalysis</ows:Identifier>
+ <!--
+
+	HTML page providing human readable description of the generic profile with examples.
+
+-->
+  <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html"/>
+  <wps:Input>
+    <ows:Title>Area of interest</ows:Title>
+    <ows:Abstract>
+      Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry (GM_Surface).
+    </ows:Abstract>
+    <ows:Identifier>aoi</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#aoi"/>
+  </wps:Input>
+  <wps:Input>
+    <ows:Title>Elevation data</ows:Title>
+    <ows:Abstract>
+      Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+    </ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>elevation</ows:Keyword>
+      <ows:Keyword>height</ows:Keyword>
+      <ows:Keyword>Digital Surface Model</ows:Keyword>
+      <ows:Keyword>Digital Elevation Model</ows:Keyword>
+    </ows:Keywords>
+    <ows:Identifier>elevationData</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#elevationData"/>
+  </wps:Input>
+  <wps:Input>
+    <ows:Title>Choice of highest or lowest points</ows:Title>
+    <ows:Abstract>
+      Parameter indicating wether lowest points or highest points are requested.
+    </ows:Abstract>
+    <ows:Identifier>analysis_type</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#analysis_type"/>
+  </wps:Input>
+  <wps:Output>
+    <ows:Title>Highest or lowest points</ows:Title>
+    <ows:Abstract>
+    Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
+    </ows:Abstract>
+    <ows:Identifier>result_points</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#result_points"/>
+  </wps:Output>
+</wps:GenericProcess>
+----
+
+.distanceMeasurement.xml
+[source,xml]
+----
+<wps:GenericProcess xmlns:ows="http://www.opengis.net/ows/2.0" xmlns:wps="http://www.opengis.net/wps/2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+  <ows:Title>Distance measurement</ows:Title>
+  <ows:Abstract>
+    It provides the distance between two or more points.
+  </ows:Abstract>
+  <ows:Keywords>
+    <ows:Keyword>distance</ows:Keyword>
+  </ows:Keywords>
+  <ows:Identifier>
+  http://www.dgiwg.org/service/processing/process/distancemeasurement
+  </ows:Identifier>
+   <!--
+
+  	HTML page providing human readable description of the generic profile with examples.
+
+  -->
+  <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/distancemeasurement.html"/>
+  <wps:Input>
+    <ows:Title>List of points</ows:Title>
+    <ows:Abstract>
+    List of two or more points in a given CRS. CRS may be 2D or 3D (with Z or height information).
+    </ows:Abstract>
+    <ows:Identifier>points_list</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#points_list"/>
+    </wps:Input>
+    <wps:Input>
+    <ows:Title>Method of measurement</ows:Title>
+    <ows:Abstract>
+      Method of measurement to be used for the calculation (for example euclidean, geodesic, …). This could include Z coordinate (or height above elispoid).
+    </ows:Abstract>
+    <ows:Identifier>measurement_method</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#measurement_method"/>
+  </wps:Input>
+  <wps:Input>
+    <ows:Title>Unit of measure</ows:Title>
+    <ows:Abstract>
+    Unit of measure for the measured distance(s) to be returned.
+    </ows:Abstract>
+    <ows:Identifier>uom</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#uom"/>
+  </wps:Input>
+  <wps:Output>
+    <ows:Title>Distance results</ows:Title>
+    <ows:Abstract>
+    Result set containing indivual distance between each point pair and/or the sum. This should include uom..
+    </ows:Abstract>
+    <ows:Identifier>distance_results</ows:Identifier>
+    <ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#distance_results"/>
+  </wps:Output>
+</wps:GenericProcess>
+----

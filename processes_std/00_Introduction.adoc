@@ -1,0 +1,6 @@
+== Introduction
+_(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)_
+
+Geoprocessing is a GIS operation used to manipulate spatial data. A typical geoprocessing operation takes an input dataset, performs an operation on that dataset, and returns the result of the operation as an output dataset. Common geoprocessing operations include geographic feature overlay, feature selection and analysis, topology processing, raster processing, and data conversion. Geoprocessing allows for definition, management, and analysis of information used to form decisions.[Wade, T. and Sommer, S. eds. A to Z GIS]. Geoprocessing may be done locally or remotely on a server (typically trhough the web or a network).
+
+This document defines geoprocesses at the generic level which may be implemented by any version of OGC WPS standard or eventually another geoprocessing API.

@@ -1,0 +1,75 @@
+[.lead]
+*Table of Contents*
+
+_(Mandatory)_
+
+[.lead]
+*List of Figures*
+
+_(as applicable)_
+
+[.lead]
+*List of Tables*
+
+_(as applicable)_
+
+[.lead]
+*Executive Summary*
+
+_(The inclusion of an Executive Summary is the discretion of the author(s))._
+
+
+[.lead]
+*Acknowledgement*
+
+_(The acknowledgement clause is optional. Acknowledgements are listed after the Executive Summary, if present, and precede the table of contents)_
+
+_(Clauses i-iv are optional, and not mandated for approval of issue, however assist in the management of the document)_
+
+*i.Contributing participants*
+
+[#status_codes,reftext='{table-caption}']
+[cols="30,205",options="header"]
+!===
+|Nation |Parent organization
+| `France` | Institut National de l'Information Géographique et Forestière (IGN)
+| `Germany` | Bundeswehr Geoinformation Centre (BGIC)
+| `United States` |  National Geospatial-Intelligence Agency (NGA)
+| `United Kingdom` |  JtUser-C4ISR-Standards-Dev3
+!===
+
+
+
+*ii.Document points of contact*
+
+*For internal documents use:*
+
+All questions regarding this document shall be directed to the editor or the contributors:
+
+[#poc,reftext='{table-caption}']
+[cols="50,85,85",options="header"]
+!===
+|Person |Organization | Email
+|Dimitri Sarafinof| National Institute of Geographic and Forest Information | Dimitri.Sarafinof@ign.fr
+| Xxxx Xxxx  | Xxxxx  | xxx.yyyy@zzzz.com
+!===
+
+
+
+For Document approved for public release use:
+All questions regarding this document shall be directed to the secretariat@dgiwg.org
+NOTE: All personal information will be removed when an internal document is made public. This includes names and personal e-mail accounts.
+
+*iii.Revision history*
+
+[#revision_history,reftext='{table-caption}']
+[cols="40,50,85,85",options="header"]
+!===
+|Date |Edition number |Primary clauses modified | Description
+|`2018.08.03` |0.1 | All | first draft from DGIWG adoc template
+|`2019.04.15` |0.1.1 | All | draft prior to Vienna
+!===
+
+
+
+*iv.	Future work*

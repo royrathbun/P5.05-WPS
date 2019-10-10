@@ -1,0 +1,6 @@
+== Scope
+_(Mandatory)_
+
+This document defines geoprocesses at the generic level which may be implemented by any version of OGC WPS standard or eventually another geoprocessing API.
+Following geoprocesses are defined:
+ #__- include final list here__#

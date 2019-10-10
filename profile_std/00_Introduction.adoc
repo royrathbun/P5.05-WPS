@@ -1,0 +1,33 @@
+== Introduction
+_(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)_
+
+A Web Processing Service (WPS) executes processes based on geospatial data.
+
+This version 2.0 defines (_from OGC 14-065_)
+
+* a Core conceptual model that may be sed to specify a WPS in different architectures such as REST or SOAP,
+* a process model to support the description and discovery of processes on the web,
+* a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,
+* a WPS service model and encoding based on OGC baseline standards, and
+* a Dismiss extension to allow clients to terminate asynchronous processing jobs.
+
+
+The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:
+
+* _GetCapabilities_ (mandatory): returns service metadata,
+* _DescribeProcess_ (mandatory): returns the description of a specific process,
+* _Execute_ (mandatory): creates a job to run a specific process,
+* _GetStatus_: returns status information about a processing job,
+* _GetResult_: returns the result of a processing job,
+
+Two bindings are now defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the _Execute_ operation)
+
+Conformity to the standard is organized with five conformance classes:
+
+* Basic WPS service profile
+* Synchronous WPS
+* Asynchronous WPS
+* WPS process model encoding
+* Dismiss extension
+
+The "_basic WPS service profile_"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.

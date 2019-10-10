@@ -1,0 +1,151 @@
+
+// *****************************************************************************
+// Editors: Guidance for editors to be put here
+// *****************************************************************************
+
+// *****************************************************************************
+// Editors please provide the following front-matter elements:
+// *****************************************************************************
+
+// *****************************************************************************
+// Insert respective document title(DGIWG title)
+// The title here should match the title on the first page.
+// *****************************************************************************
+:title: Defence Geoprocessing profiles
+
+// *****************************************************************************
+// Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
+// An identifier can be obtained in the OGC Portal at:
+// https://portal.dgiwg.org/?m=public&orderby=default&tab=1
+// *****************************************************************************
+:docReference: DGIWG – xxx
+
+// *****************************************************************************
+// Date sumiteed to DGIWG Ballot, with format: dd-mm-yyy.
+// *****************************************************************************
+
+:submissionDate: DD-MM-YYYY
+
+// *****************************************************************************
+// Names of all editors, comma-separated (e.g., John Doe, Sue Smith)
+// *****************************************************************************
+
+:editor: Dimitri Sarafinof
+
+// *****************************************************************************
+// Proposed DGIWG panels for review (e.g. P5 - WSTP)
+// *****************************************************************************
+
+:workingGroup: P5.05
+
+// *****************************************************************************
+// End of Editor's front-matter elements.
+// Editors please continue at "include::2-references.adoc[]" below.
+// *****************************************************************************
+
+// *****************************************************************************
+// Editors please do not alter the administrative front matter below.
+// *****************************************************************************
+:category: DGIWG STD
+:publicationDate: DD-MM-YYYY
+:approvalDate: DD-MM-YYYY
+:referenceURLID: ID
+:copyrightYear: 2019
+//
+:titletext: {title}
+:doctype: book
+:encoding: utf-8
+:lang: en
+:toc: left
+:toclevels: 3
+:numbered:
+:sectanchors:
+:source-highlighter: coderay
+// set media to output format print or screen for pdf export
+:media: print
+:bibtex-file: resources/bibtex-file.bib
+:bibtex-style: resources/lncs.csl
+
+image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
+
+[.text-center]
+= {docReference} + {title}
+
+
+
+
+[#front_page,reftext='{table-caption}']
+[cols="25,85"]
+!===
+|Document type:	| Standard
+// subtype and profile of may be used for Standard
+|Document subtype:	| Implementation profile
+|Profile of:	| NaN
+|Document date:	| dd month yyyy
+// The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
+|Edition number:	| x.x.x
+// Superseedes shall be used for document resvision (version >1.0)
+|Supersedes: 	| DGIWG – XXX Ed. x.x.x, Title, dated 'day' 'month' 'year'
+|Responsible Party: 	| DGIWG
+|Editor : | {editor}
+// The ‘Editor’ field is optional. The field is not used for documents that are cleared for public release._
+|Audience: 	| DGIWG participants and associates
+|Abstract: 	| This document defines specific DGIWG requirements, recommendations and guidelines for implementations of the OGC Web Processing Service standards.
+|Copyright:	| (C) Copyright DGIWG, some rights reserved  -  (CC) (By:) Attribution
+You are free:
+-	to copy, distribute, display, and perform/execute the work
+-	to make derivative works
+-	to make commercial use of the work
+Under the following conditions:
+-	(By:) Attribution. You must give the original author (DGIWG) credit.
+-	For any reuse or distribution, you must make clear to others the license terms of this work.
+Any of these conditions can be waived if you get permission from the copyright holder DGIWG.
+Your fair use and other rights are in no way affected by the above.
+This is a human-readable summary of the Legal Code (the full license is available from Creative Commons <http://creativecommons.org/licenses/by/2.0/ >).
+!===
+
+include::00_Front_Material.adoc[]
+
+include::00_Introduction.adoc[]
+
+include::01_Scope.adoc[]
+
+include::02_Conformance.adoc[]
+
+include::03_Normative_Reference.adoc[]
+
+include::04_Terms_and_Definitions.adoc[]
+
+// *****************************************************************************
+// Editors organize included-file inputs as appropriate starting here.
+// *****************************************************************************
+
+include::05_DGIWG_Process.adoc[]
+
+include::06_DGIWG_Process_Profiles.adoc[]
+
+// you may add any number of chapters as required here
+
+// *****************************************************************************
+// Editors add or remove annexes as necessary.
+// *****************************************************************************
+
+include::annex-a.adoc[]
+
+include::annex-b.adoc[]
+
+include::annex-c.adoc[]
+
+// *****************************************************************************
+// Revision History should be the last annex before the Bibliography.
+// Bibliography should be the last annex.
+// *****************************************************************************
+
+include::annex-history.adoc[]
+
+include::annex-bibliography.adoc[]
+
+// *****************************************************************************
+// Editors please proceed to edit the content of 2-references.adoc[],
+// 3-terms.adoc[], etc. for each of the included files.
+// *****************************************************************************

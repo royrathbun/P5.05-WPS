@@ -1,0 +1,95 @@
+== DGIWG Process (Normative)
+
+=== Introduction
+This chapter defines normative requirements to implement "DGIWG process" class.
+
+=== Normative requirements
+The Normative requirements requested by this conformance class are summarized in <<dgiwg_process_req>>.
+[#dgiwg_process_req,reftext='{table-caption} {counter:table-num}']
+[cols="1,10,1",options="header"]
+.DGIWG process Normative Requirements
+!===
+|No. | Requirement | Compliance
+|{counter:process_req_table} | a DGIWG generic process profile shall satisfy requirements from http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic (<<OGC-WPS-2.0>>) requirement class.| M
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req2>> for the description of a DGIWG generic process.| M
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| mail
+|{counter:process_req_table} | a DGIWG generic process profile shall be documented using template provided in Annex XX. | M
+!===
+
+=== Non-Normative Recommendations for Implementation
+The non-normative recommandations defined by this conformance class are summarized in <<dgiwg_process_rec>>.
+[#dgiwg_process_rec,reftext='{table-caption} {counter:table-num}']
+[cols="1,10,1",options="header"]
+.DGIWG process Non-normative Recommendations for DGIWG processes.
+!===
+|No. | Requirement | Compliance
+|{counter:process_rec_table} | A DGIWG process should ...| O
+|{counter:process_rec_table} | A DGIWG process should ...| O
+|{counter:process_rec_table} | ...| ...
+!===
+
+=== General
+
+While this document definitions and requirements may be used by any geoprocessing implementation, OGC WPS 2.0 specification (<<OGC-WPS-2.0>>) provides a mechanism to define common processing functionality. Aiming at harmonization, the definitions of process profiles may be used to foster a common understanding of widely used processing functions. However, they may also be used to harmonize the technical details of process interfaces and thus document particular interoperability arrangements between process providers and consumers.
+
+A process profile is a description of a process on an interface level. Process profiles may have different levels of abstraction and cover several aspects. On a generic level, a process profile may only refer to the provided functionality of a process, i.e. by giving a verbal or formal definition how the outputs are derived from the inputs. On a concrete level a process profile may completely define inputs and outputs including data type definitions and formats. This document specifies requirement to develop process profiles at a generic level.
+
+Figure below provides an UML description of the generic process model.
+.Generic process model (source <<OGC-WPS-2.0>>)
+image::./images/GenericProcess.png[WPS_GenericProcess,align=center]
+
+*_Requirement {counter:process_req}: a DGIWG generic process profile shall satisfy requirements from http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic (<<OGC-WPS-2.0>>) requirement class._*
+
+For convenience, detailed requirement from <<>> are repeated below:
+
+[#dgiwg_req1,reftext='{table-caption} {counter:table-num}']
+[cols="1,8",options="no-header"]
+.WPS 2.0 requirements for generic profile requirement class (http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic)
+!===
+| Requirement | http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/structure A process description shall comply with the structure defined in Figure 13 and Table 18.
+| Requirement | http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/description-language The language of the human-readable elements within the process description shall be identified by a language identifier as specified in IETF RFC 4646.
+| Requirement	| http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic/io-description-type The description of process inputs and outputs shall comply with the structure defined in Figure 13, Table 19, and Table 20.
+!===
+
+*_Requirement {counter:process_req}: a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req2>> for the description of a DGIWG generic process._*
+
+[#dgiwg_process_req2,reftext='{table-caption} {counter:table-num}']
+[cols="5",options="header"]
+.DGIWG generic process structure (edited from Table 18 <<OGC-WPS-2.0>>)
+!===
+|Name | Definition | Data type and Values | Multiplicity and use | DGIWG
+| Title | Title of the process, input, and output. Normally available for display to a human. | ows:Title |One (mandatory) | No channge
+| Abstract | 	Brief narrative description of a process, input, and output. Normally available for display to a human. | ows:Abstract | Zero or one (optional) Include when available and useful. | One (mandatory)
+| Keywords | Keywords that characterize a process, its inputs, and outputs. | ows:Keywords | Zero or more (optional) Include when available and useful. | Mandatory (at least one)
+| Identifier | Unambiguous identifier of a process. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/process/{process-name}.
+| Metadata | to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
+| Language | Language identifier for the human readable process description elements. | Character String. This language identifier shall be as specified in IETF RFC 4646. | One (mandatory) | English is mandatory in a coalition implementation (en-EN)
+| Input | Input items (arguments) of a process. | GenericInput structure, see Table 167. | Zero or more (optional) | no change
+| Output | Output items (results) of a process | GenericOutput structure, see Table 178. | One or more (mandatory) | no change
+!===
+
+*_Requirement {counter:process_req}: a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters._*
+
+[#dgiwg_process_req3,reftext='{table-caption} {counter:table-num}']
+[cols="5",options="header"]
+.DGIWG generic process structure (edited from Table 19 <<OGC-WPS-2.0>>)
+!===
+|Name | Definition | Data type and Values | Multiplicity and use | DGIWG
+| Title | Title of the process, input, and output. Normally available for display to a human. | ows:Title |One (mandatory) | No channge
+| Abstract | 	Brief narrative description of a process, input, and output. Normally available for display to a human. | ows:Abstract | Zero or one (optional) Include when available and useful. | One (mandatory)
+| Keywords | Keywords that characterize a process, its inputs, and outputs. | ows:Keywords | Zero or more (optional) Include when available and useful. | Mandatory (at least one)
+| Identifier | Unambiguous identifier of a process. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | #HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/parameter/{parameter-name} or just parameter name ?.#
+| Metadata | to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
+| minOccurs | Minimum number of times that values for this parameter are required. | Non-negative integer; defaults to “1”, ‘0’ means the input is optional. | Zero or one (optional) | no change
+| maxOccurs  | Maximum number of times that this parameter may be present. | Non-negative integer, defaults to “1”. | Zero or more (optional) | no change
+| Input | Nested Input. | GenericInput structure, Table 19 (this table). | Zero or more (optional) | no change
+!===
+
+*_Requirement {counter:process_req}: a DGIWG generic process profile shall be documented using template provided in Annex XX._*
+
+CAUTION: template to be developped
+
+#what king of ows:metadata ?#
+
+WARNING: TBD
+recomandation for registering profile on DGIWG website/registry discussion

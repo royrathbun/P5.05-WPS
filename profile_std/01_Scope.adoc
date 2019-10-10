@@ -1,0 +1,5 @@
+== Scope
+_(Mandatory)_
+
+This document defines specific Defence requirements, recommendations and guidelines for
+implementations of the OGC Web Processing Service (WPS) standard (document number 14-065), version 2.0.
