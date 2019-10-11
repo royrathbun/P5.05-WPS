@@ -45,16 +45,22 @@ For each of these operation, at least one binding has to be supported (HTTP/GET+
 
 ==== GetCapabilities operation
 
+Following figure illustrates different parts of the GetCapabilities response document.
+
+.GetCapabilities response document UML class diagram (source <<OGC-WPS-2.0>>)
+
+image::./images/Capabilities.png[WPS_Capabilities,align=center]
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>>, <<get_cap_Language>> and <<process_sum>>._*
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString._*
 
 *_Requirement {counter:dgiwg_basic_req}: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB"._*
 
+*_Requirement {counter:dgiwg_basic_req}: If content provided by a WFS server is classified, a DGIWG Basic WPS server shall identify the highest classification level of the content accessible through the WFS service by populating the accessConstraints element._*
+
 NOTE: for example _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-GB) and optionalty in other languages (with lang fr-CA for french (Canada)).
 
-.GetCapabilities reponse document UML class diagram (source <<OGC-WPS-2.0>>)
-image::./images/Capabilities.png[WPS_Capabilities,align=center]
+
 
 Following tables describes adittional requirements for filling in GetCapabilities response document.
 
@@ -63,10 +69,10 @@ Following tables describes adittional requirements for filling in GetCapabilitie
 .GetCapabilities response elements - ServiceIdentification
 !===
 |Names | Definition | Data type and values | Multiplicity and use | DGIWG
-|serviceType | A service type URN from a registry of services, normally used for machine-to-machine communication. | URN | One (mandatory) *_Fixed to "WPS"_* | One (mandatory)
-|serviceTypeVersion | Versions of this service type implemented by this server. | Character string type, not empty | One or more (mandatory) *_Shall contain at least value 2.0.2_* | One or more (mandatory)
+|serviceType | A service type URN from a registry of services, normally used for machine-to-machine communication. | URN | One (mandatory) *_Fixed to "WPS"_* | no change
+|serviceTypeVersion | Versions of this service type implemented by this server. | Character string type, not empty | One or more (mandatory) *_Shall contain at least value 2.0.2_* | no change
 |profile | Identifier of OGC Web Service (OWS) Application Profile. | Character string type, not empty | Zero or one (optional) | One (mandatory) *_Shall contain at least one element with value http://www.dgiwg.org/std/wps/1.0/conf/basic_*
-|title | Title of this server, normally used for display to a human. | LanguageString data structure, see Figure 15 | One or more (mandatory) | ?
+|title | Title of this server, normally used for display to a human. | LanguageString data structure, see Figure 15 | One or more (mandatory) | no change
 |abstract | Brief narrative description of this server, normally available for display to a human. | LanguageString data structure, see Figure 15 | Zero or more (optional) | Zero or more (optional) *_A DGIWG basic WPS server shall include the following information in the abstract element of the service metadata: "This service implements the DGIWG WPS 2.0 profile version 1.0, DGIWG Basic WPS conformance class (http://www.dgiwg.org/std/wps/1.0/conf/basic)."_*
 |keywords | Unordered list of one or more commonly used or formalised word(s) or phrase(s) used to describe this serve. | See MD_Keywords class in ISO 19115 | Zero or more (optional) | #keywords are recommanded.#
 |fees | Fees and terms for using this server, including the monetary units as specified in ISO 4217. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no fees or terms | Zero or one (optional) | #?#
@@ -149,7 +155,7 @@ GetStatus operation returns back a StatusInfo document, providing identification
 |ExpirationDate	| Date and time by which the job and its results will be no longer accessible. | ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	| Zero or one (optional) Include if required. |
 |EstimatedCompletion	| Date and time by which the processing job will be finished.	| ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	| Zero or one (optional) Include if available. |
 |NextPoll	| Date and time for the next suggested status polling.	| ISO-8601 date/time string in the form YYYY-MM-DDTHH:MM:SS.SSSZ with T separator character and Z suffix for coordinated universal time (UTC)	| Zero or one (optional) Include if required. |
-|PercentCompleted	| Percentage of process that has been completed. |	Integer{0..100} |	Zero or one (optional) Include if available. |
+|PercentCompleted	| Percentage of process that has been completed. |	Integer{0..100} |	Zero or one (optional) Include if available. | #recommendation ?#
 !===
 
 ==== GetResult operation
