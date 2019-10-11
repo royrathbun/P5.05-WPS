@@ -11,7 +11,7 @@
 // Insert respective document title(DGIWG title)
 // The title here should match the title on the first page.
 // *****************************************************************************
-:title: Defence Geoprocessing profiles
+:title: Defence Geoprocessing generic profiles
 
 // *****************************************************************************
 // Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
