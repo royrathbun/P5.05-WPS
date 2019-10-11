@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.7">
-<title>Defence Geoprocessing profiles</title>
+<title>Defence Geoprocessing generic profiles</title>
 <link rel="stylesheet" href="resources/stylesheets/dgiwg.css">
 </head>
 <body class="book toc2 toc-left">
@@ -13,7 +13,7 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel0">
-<li><a href="#_dgiwg_xxx_defence_geoprocessing_profiles">DGIWG – xxx + Defence Geoprocessing profiles</a>
+<li><a href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles">DGIWG – xxx + Defence Geoprocessing generic profiles</a>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a></li>
 <li><a href="#_scope">2. Scope</a></li>
@@ -60,13 +60,41 @@
 </li>
 </ul>
 </li>
+<li><a href="#_range_rings">8. Range rings</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_range_rings">8.1. Generic process : range rings</a></li>
+</ul>
+</li>
+<li><a href="#_viewshed_analysis">9. Viewshed analysis</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_viewshed_analysis">9.1. Generic process : viewshed analysis</a></li>
+</ul>
+</li>
+<li><a href="#_slope">10. Slope</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_slope">10.1. Generic process : slope</a></li>
+</ul>
+</li>
+<li><a href="#_helicopter_landing_zone">11. Helicopter Landing Zone</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_hlz">11.1. Generic process : HLZ</a></li>
+</ul>
+</li>
+<li><a href="#_routing">12. Routing</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_routing">12.1. Generic process : routing</a></li>
+</ul>
+</li>
+<li><a href="#_geopackage">13. Geopackage</a>
+<ul class="sectlevel2">
+<li><a href="#_generic_process_geopackage">13.1. Generic process : geopackage</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a href="#AbstractTestSuite">Appendix A: Abstract Test Suite</a></li>
 <li><a href="#GenericProfiles">Appendix B: DGIWG Generic profiles examples</a></li>
-<li><a href="#UMLModel">Appendix C: UML model</a></li>
-<li><a href="#RevisionHistory">Appendix D: Revision History</a></li>
-<li><a href="#Bibliography">Appendix E: Bibliography</a></li>
+<li><a href="#Bibliography">Appendix C: Bibliography</a></li>
 </ul>
 </div>
 </div>
@@ -80,7 +108,7 @@
 </div>
 </div>
 </div>
-<h1 id="_dgiwg_xxx_defence_geoprocessing_profiles" class="sect0 text-center"><a class="anchor" href="#_dgiwg_xxx_defence_geoprocessing_profiles"></a>DGIWG – xxx + Defence Geoprocessing profiles</h1>
+<h1 id="_dgiwg_xxx_defence_geoprocessing_generic_profiles" class="sect0 text-center"><a class="anchor" href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles"></a>DGIWG – xxx + Defence Geoprocessing generic profiles</h1>
 <div class="openblock partintro">
 <div class="content">
 <table id="front_page" class="tableblock frame-all grid-all stretch">
@@ -271,10 +299,16 @@ NOTE: All personal information will be removed when an internal document is made
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.08.22</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.08.10</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri Sarafinof</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">first draft from DGIWG adoc template</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.10.11</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri Sarafinof</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">first draft with generic processes description</p></td>
 </tr>
 </tbody>
 </table>
@@ -857,19 +891,19 @@ Following DGIWG processes are desribed below:</p>
 <p>viewshed</p>
 </li>
 <li>
-<p>slope helicopter landing zone</p>
+<p>slope</p>
 </li>
 <li>
-<p>gazetteer</p>
-</li>
-<li>
-<p>geopackage</p>
+<p>helicopter landing zone</p>
 </li>
 <li>
 <p>geocoding</p>
 </li>
 <li>
-<p>route calculation</p>
+<p>routing</p>
+</li>
+<li>
+<p>geopackage</p>
 </li>
 </ul>
 </div>
@@ -1035,8 +1069,7 @@ Following DGIWG processes are desribed below:</p>
   Keywords
   Abstract	List of two or more points in a given CRS. CRS may be 2D or 3D (with Z or height information).
   Metadata
-  Multiplicity	1
-  Data format</pre>
+  Multiplicity	1</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1049,8 +1082,7 @@ Following DGIWG processes are desribed below:</p>
   Keywords
   Abstract	Method of measurement to be used for the calculation (for example euclidean, geodesic, …). This could include Z coordinate (or height above elispoid).
   Metadata
-  Multiplicity	0..1
-  Data format</pre>
+  Multiplicity	0..1</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1063,8 +1095,7 @@ Following DGIWG processes are desribed below:</p>
   Keywords
   Abstract	Unit of measure for the measured distance(s) to be returned.
   Metadata
-  Multiplicity	1
-  Data format</pre>
+  Multiplicity	1</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -1145,14 +1176,643 @@ Following DGIWG processes are desribed below:</p>
 </div>
 </div>
 <div class="sect1">
+<h2 id="_range_rings"><a class="anchor" href="#_range_rings"></a>8. Range rings</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_range_rings"><a class="anchor" href="#_generic_process_range_rings"></a>8.1. Generic process : range rings</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/rangerings
+  Title	Range rings analysis
+  Keywords
+  Abstract	It creates ranges rings. Two methods are proposed, either by providing a list of radius values (radius_value), or by providing a number of rings (rings_nb) and an equal spacing (rings_spacing). Radials may be added (radials_nb) to divide range rings into sectors.
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	center_point
+  Title	A center point.
+  Keywords
+  Abstract	A center point from which the rings will be defined in a given CRS.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	radius_value
+  Title	Radius value(s)
+  Keywords
+  Abstract	One or more radius value(s) with UOM defining the range(s) around the center point.
+  Metadata
+  Multiplicity	0..n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	rings_nb
+  Title	Number of rings
+  Keywords
+  Abstract	The number of ring(s) around the center points, with an equal space (rings_spacing).
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	rings_spacing
+  Title	Spacing between rings
+  Keywords
+  Abstract	The spacing with UOM that is used to create ring_nb ring(s).
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	radials_nb
+  Title	Number of radials
+  Keywords
+  Abstract	Number of the radials dividing the range rings into sectors.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	range_rings
+  Title	Range rings
+  Keywords
+  Abstract	A geometry representing the created range rings and optional radials.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_viewshed_analysis"><a class="anchor" href="#_viewshed_analysis"></a>9. Viewshed analysis</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_viewshed_analysis"><a class="anchor" href="#_generic_process_viewshed_analysis"></a>9.1. Generic process : viewshed analysis</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/viewshed
+  Title	Viewshed
+  Keywords	visibility, sight
+  Abstract	Visibility of one observer around him (at 360°)
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	elavation_data
+  Title	Elevation data
+  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+  Metadata
+  Multiplicity	0..1
+  Data format	raster, tif</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	observer_position
+  Title	Marker/point(s) denoting observer(s)
+  Keywords	observer
+  Abstract	Marker/point(s) in a given CRS.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	observer_height
+  Title	Height of observer
+  Keywords	observer, height
+  Abstract	Eye-level height of observer(s).
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	target_height
+  Title	Line of sight target
+  Keywords	observer, height, target
+  Abstract	Height of observable objects
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	viewshed_distance
+  Title	Line of sight distance
+  Keywords	observer, distance, target
+  Abstract	Limit of viewshed analysis
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	earth_curvature
+  Title	Earth curvature
+  Keywords	curvature
+  Abstract	Whether earth curvature shall be taken into account or not.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	Athm_refraction
+  Title	Athmosphere refraction
+  Keywords	refraction
+  Abstract	Whether Athmosphere refraction shall be taken into account or not.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	viewshed_results
+  Title	Viewshed results
+  Keywords
+  Abstract	The unimpeded view or access from one point to another point across a terrain or surface.  Compound line of sight results in areas visible by multiple observers.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_slope"><a class="anchor" href="#_slope"></a>10. Slope</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_slope"><a class="anchor" href="#_generic_process_slope"></a>10.1. Generic process : slope</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/slope
+  Title	Slope analysis
+  Keywords	slope
+  Abstract	Calculates the slope on a given area of interest. Slope may be percentage or angle in degrees. Result is a raster coverage.
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	aoi
+  Title	Area of interest
+  Keywords
+  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	elavation_data
+  Title	Elevation data
+  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	slope_units
+  Title	Slope units
+  Keywords	slope,units, degrees, percentage
+  Abstract	Units to be used for the slope measurement.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	slope_results
+  Title	Slope analysis results
+  Keywords
+  Abstract	Slope (in degrees or percentage) calculated by the analysis representing  the steepness of  each cell. This may also contain metadata describing the data sources and the units used.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_helicopter_landing_zone"><a class="anchor" href="#_helicopter_landing_zone"></a>11. Helicopter Landing Zone</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_hlz"><a class="anchor" href="#_generic_process_hlz"></a>11.1. Generic process : HLZ</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/hlz
+  Title	Helicopter Landing Zone
+  Keywords	helicopter, landing zone, slope, obstacle
+  Abstract	Helicopter landing zones contain one or more helicopter landing sites.
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	elevation_data
+  Title	Elevation data
+  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	land_cover
+  Title	Land cover
+  Keywords	land, cover, vegetation, water, brush;
+  Abstract	General land cover and vegetation types over areas of land, including water.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	max_slope_tolerance
+  Title	Maximum slope tolerance
+  Keywords	slope, units
+  Abstract	The maximum slope tolerance with units (degrees or percentage).
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	min_radius
+  Title	Minimum radius
+  Keywords	radius
+  Abstract	The minimum necessary radius of landing zone, based on aircraft used.  See aircraft specs or operational guidance.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	height_tolerance
+  Title	Surface obstructions height tolerance
+  Keywords	z value, obstacle
+  Abstract	Maximum size object suitable in HLZ with UOM ; ground clearance of aircraft.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	hlz_results
+  Title	HLZ analysis results
+  Keywords
+  Abstract	A coverage depicting zones large enough for a helicopter to land and take off.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_routing"><a class="anchor" href="#_routing"></a>12. Routing</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_routing"><a class="anchor" href="#_generic_process_routing"></a>12.1. Generic process : routing</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/routing
+  Title	Routing
+  Keywords	route
+  Abstract	It provides route according specified parameters.
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	way_points
+  Title	Way points
+  Keywords
+  Abstract	A list of points along the route. At least two points have to be provided (start and end point).
+  Metadata
+  Multiplicity	2..n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	preference
+  Title	Routing preference
+  Keywords	shortest, fastest
+  Abstract	The routing preference (shortest, fastest or other specific by the service or API). Fastest is the default value.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	max_height
+  Title	Maximum height of the vehicle.
+  Keywords
+  Abstract	A height restriction for vehicles in meters to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	max_weight
+  Title	Maximum weight of the vehicle.
+  Keywords
+  Abstract	A weight restriction for vehicles in tons to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	max_weight
+  Title	Maximum weight of the vehicle.
+  Keywords
+  Abstract	A weight restriction for vehicles in tons to consider when computing the route.Support for this parameter is not required and the parameter may be removed from the API definition.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	result_points
+  Title	Highest or lowest points
+  Keywords
+  Abstract	Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_geopackage"><a class="anchor" href="#_geopackage"></a>13. Geopackage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_generic_process_geopackage"><a class="anchor" href="#_generic_process_geopackage"></a>13.1. Generic process : geopackage</h3>
+<div class="paragraph">
+<p>Process</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	http://www.dgiwg.org/service/processing/process/geopackage
+  Title	Geopackage creation
+  Keywords	Geopackage, vector, raster, imagery, coverage
+  Abstract	It provides geopackage file from input data.
+  Metadata</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	aoi
+  Title	Area of interest
+  Keywords
+  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	name
+  Title	Geopackage name
+  Keywords
+  Abstract	Name of the generated geopackage
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	description
+  Title	Geopackage description
+  Keywords
+  Abstract	Description of the generated geopackage
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	data_sources
+  Title	Data sources
+  Keywords	tiles, chart maps, imagery, vector, elevation
+  Abstract	Selection of input data to compute the geopackage file. A same source can contain different layers; desired layers to be package shall be specified in the request.
+  Metadata
+  Multiplicity	1..n</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	dataset
+  Title	Input dataset
+  Keywords
+  Abstract	The source dataset to use for calculating the route.
+  Metadata
+  Multiplicity	1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	engine
+  Title	Routing engine
+  Keywords
+  Abstract	The routing engine to use for calculating the route.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	algorithm
+  Title	graph solving algorithm
+  Keywords
+  Abstract	The routing / graph solving algorithm to use for calculating the route.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	when
+  Title	Time of departure or arrival
+  Keywords
+  Abstract	 The time of departure or arrival. Default is "now".
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Input</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	departure
+  Title	Departure
+  Keywords
+  Abstract	Specifies whether the value of `when` refers to the time of departure or arrival. Default is departure.
+  Metadata
+  Multiplicity	0..1</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Output</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	route
+  Title	Calculated route
+  Keywords	gpkg
+  Abstract	Calculated route according specified parameters.
+  Metadata</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="AbstractTestSuite"><a class="anchor" href="#AbstractTestSuite"></a>Appendix A: Abstract Test Suite</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>An Abstract Test Suite may be relevant to an Engineering Report.</p>
-</div>
-<div class="paragraph">
-<p>An Abstract Test Suite is specified in Clause 9 and Annex A of ISO 19105. That Clause and Annex specify the ISO/TC 211 requirements for Abstract Test Suites. Examples of Abstract Test Suites are available in an annex of most ISO 191XX documents, one of the more useful is in ISO 19136. Note that this guidance may be more abstract than needed in an OGC® Implementation Standard.</p>
-</div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 7. A.1.1	Conformance level 1</caption>
 <colgroup>
@@ -1166,34 +1826,12 @@ Following DGIWG processes are desribed below:</p>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance level 1.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance class xxx.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>GetCapabilities (mandatory)</p>
-</li>
-<li>
-<p>DescribeRecord (mandatory)</p>
-</li>
-<li>
-<p>GetRecords (mandatory)</p>
-</li>
-<li>
-<p>GetRecordById (mandatory)</p>
-</li>
-<li>
-<p>GetRepositoryItem (mandatory)</p>
-</li>
-<li>
-<p>GetDomain (optional)</p>
-</li>
-</ul>
+<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour  &#8230;&#8203;</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1253,29 +1891,7 @@ Following DGIWG processes are desribed below:</p>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of the IUT for the following operations:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>GetCapabilities (mandatory)</p>
-</li>
-<li>
-<p>DescribeRecord (mandatory)</p>
-</li>
-<li>
-<p>GetRecords (mandatory)</p>
-</li>
-<li>
-<p>GetRecordById (mandatory)</p>
-</li>
-<li>
-<p>GetRepositoryItem (mandatory)</p>
-</li>
-<li>
-<p>GetDomain (optional)</p>
-</li>
-</ul>
+<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of &#8230;&#8203;</p>
 </div></div></td>
 </tr>
 <tr>
@@ -1440,66 +2056,7 @@ Following DGIWG processes are desribed below:</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="UMLModel"><a class="anchor" href="#UMLModel"></a>Appendix C: UML model</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A UML model may be relevant to an Engineering Report. This template thus includes this annex as the place for recording this UML model.</p>
-</div>
-<div class="paragraph">
-<p>Instructions and guidelines on the usage of UML models are provided in OGC document <a href="https://portal.opengeospatial.org/files/?artifact_id=38867"> OGC-121r9</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="RevisionHistory"><a class="anchor" href="#RevisionHistory"></a>Appendix D: Revision History</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title">Example History (Delete this note).</div>
-<div class="paragraph">
-<p>replace below entries as needed</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 11. Revision History</caption>
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Editor</th>
-<th class="tableblock halign-left valign-top">Release</th>
-<th class="tableblock halign-left valign-top">Primary clauses modified</th>
-<th class="tableblock halign-left valign-top">Descriptions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">August 22, 2018</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">initial version</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Appendix E: Bibliography</h2>
+<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Appendix C: Bibliography</h2>
 <div class="sectionbody">
 
 </div>
@@ -1507,7 +2064,7 @@ Following DGIWG processes are desribed below:</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-08-23 17:54:49 +0200
+Last updated 2019-10-11 13:01:13 +0200
 </div>
 </div>
 <link rel="stylesheet" href="resources/stylesheets/coderay-asciidoctor.css">

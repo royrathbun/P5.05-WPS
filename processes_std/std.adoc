@@ -11,7 +11,7 @@
 // Insert respective document title(DGIWG title)
 // The title here should match the title on the first page.
 // *****************************************************************************
-:title: Defence Geoprocessing profiles
+:title: Defence Geoprocessing generic profiles
 
 // *****************************************************************************
 // Document Reference, with format "DGIWG - XXX" (e.g., DGIW - 112 ).
@@ -134,14 +134,10 @@ include::annex-a.adoc[]
 
 include::annex-b.adoc[]
 
-include::annex-c.adoc[]
-
 // *****************************************************************************
 // Revision History should be the last annex before the Bibliography.
 // Bibliography should be the last annex.
 // *****************************************************************************
-
-include::annex-history.adoc[]
 
 include::annex-bibliography.adoc[]
 
