@@ -1,14 +1,32 @@
 == WPS 2.0 presentation (informative)
 
-=== WPS Core conceptual model
+=== Introduction
 
-=== Process model
-_Description of the operation_
+Version 2.0 of OGC WPS (<<OGC-WPS-2.0>>) defines :
 
-=== Basic data model
+* a Core conceptual model that may be used to specify a WPS in different architectures such as REST or SOAP,
+* a process model to support the description and discovery of processes on the web,
+* a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,
+* a WPS service model and encoding based on OGC baseline standards, and
+* a Dismiss extension to allow clients to terminate asynchronous processing jobs.
 
-=== WPS service model and dissmiss extension
-_Description of the 6 extensions (5 from the service model + dissmiss_
 
+The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:
 
-=== Bindings
+* _GetCapabilities_ (mandatory): returns service metadata,
+* _DescribeProcess_ (mandatory): returns the description of a specific process,
+* _Execute_ (mandatory): creates a job to run a specific process,
+* _GetStatus_: returns status information about a processing job,
+* _GetResult_: returns the result of a processing job,
+
+Two bindings are defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the _Execute_ operation).
+
+Conformity to the standard is organized with five conformance classes:
+
+* Basic WPS service profile
+* Synchronous WPS
+* Asynchronous WPS
+* WPS process model encoding
+* Dismiss extension
+
+The "_basic WPS service profile_"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.

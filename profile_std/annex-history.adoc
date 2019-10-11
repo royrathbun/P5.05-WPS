@@ -12,7 +12,7 @@ replace below entries as needed
 [width="90%",options="header"]
 |====================
 |Date |Editor |Release | Primary clauses modified |Descriptions
-|August 23, 2019 |D. Sarafinof | .2 |all |second version
+|October 10, 2019 |D. Sarafinof | .2 |all |second draft version
 |July 18, 2018 |D. Sarafinof | .1 |all |initial version
-|July 24, 2016 |WSTP | .2 |all |comments integrattion
+|July 24, 2016 |WSTP | .0 |all |comments integration
 |====================
