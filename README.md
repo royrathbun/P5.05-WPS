@@ -9,8 +9,6 @@ Common understanding, interoperability and reusability of web processing service
 
 # DELIVERABLES:
 
-1.  DGIWG WPS core profile
+1. DGIWG profile of OGC WPS 2.0 (see /profile_std)
 
-2. Questionnaire to establish what is in deliverable 3.
-
-3. DGIWG process profiles
+2. DGIWG generic process profiles (see /processes_std)
