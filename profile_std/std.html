@@ -37,16 +37,12 @@
 </li>
 <li><a href="#_wps_2_0_presentation_informative">6. WPS 2.0 presentation (informative)</a>
 <ul class="sectlevel2">
-<li><a href="#_wps_core_conceptual_model">6.1. WPS Core conceptual model</a></li>
-<li><a href="#_process_model">6.2. Process model</a></li>
-<li><a href="#_basic_data_model">6.3. Basic data model</a></li>
-<li><a href="#_wps_service_model_and_dissmiss_extension">6.4. WPS service model and dissmiss extension</a></li>
-<li><a href="#_bindings">6.5. Bindings</a></li>
+<li><a href="#_introduction_2">6.1. Introduction</a></li>
 </ul>
 </li>
 <li><a href="#_dgiwg_wps_basic_normative">7. DGIWG WPS basic (Normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_introduction_2">7.1. Introduction</a></li>
+<li><a href="#_introduction_3">7.1. Introduction</a></li>
 <li><a href="#_normative_requirements">7.2. Normative requirements</a></li>
 <li><a href="#_non_normative_recommendations_for_implementation">7.3. Non-Normative Recommendations for Implementation</a></li>
 <li><a href="#_general">7.4. General</a>
@@ -64,9 +60,7 @@
 </li>
 <li><a href="#AbstractTestSuite">Appendix A: Abstract Test Suite</a></li>
 <li><a href="#XMLSchemaDocuments">Appendix B: XML Schema Documents</a></li>
-<li><a href="#UMLModel">Appendix C: UML model</a></li>
-<li><a href="#RevisionHistory">Appendix D: Revision History</a></li>
-<li><a href="#Bibliography">Appendix E: Bibliography</a></li>
+<li><a href="#Bibliography">Appendix C: Bibliography</a></li>
 </ul>
 </div>
 </div>
@@ -282,6 +276,12 @@ NOTE: All personal information will be removed when an internal document is made
 <td class="tableblock halign-left valign-top"><p class="tableblock">All</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">draft prior to Vienna</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.10.10</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">All</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">draft after Tallinn</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -296,79 +296,7 @@ NOTE: All personal information will be removed when an internal document is made
 <p><em>(Mandatory. The introduction is located on a separated page  preceding the ‘Scope’ statement. The introduction is not numbered.)</em></p>
 </div>
 <div class="paragraph">
-<p>A Web Processing Service (WPS) executes processes based on geospatial data.</p>
-</div>
-<div class="paragraph">
-<p>This version 2.0 defines (<em>from OGC 14-065</em>)</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>a Core conceptual model that may be sed to specify a WPS in different architectures such as REST or SOAP,</p>
-</li>
-<li>
-<p>a process model to support the description and discovery of processes on the web,</p>
-</li>
-<li>
-<p>a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,</p>
-</li>
-<li>
-<p>a WPS service model and encoding based on OGC baseline standards, and</p>
-</li>
-<li>
-<p>a Dismiss extension to allow clients to terminate asynchronous processing jobs.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><em>GetCapabilities</em> (mandatory): returns service metadata,</p>
-</li>
-<li>
-<p><em>DescribeProcess</em> (mandatory): returns the description of a specific process,</p>
-</li>
-<li>
-<p><em>Execute</em> (mandatory): creates a job to run a specific process,</p>
-</li>
-<li>
-<p><em>GetStatus</em>: returns status information about a processing job,</p>
-</li>
-<li>
-<p><em>GetResult</em>: returns the result of a processing job,</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Two bindings are now defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the <em>Execute</em> operation)</p>
-</div>
-<div class="paragraph">
-<p>Conformity to the standard is organized with five conformance classes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Basic WPS service profile</p>
-</li>
-<li>
-<p>Synchronous WPS</p>
-</li>
-<li>
-<p>Asynchronous WPS</p>
-</li>
-<li>
-<p>WPS process model encoding</p>
-</li>
-<li>
-<p>Dismiss extension</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The "<em>basic WPS service profile</em>"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</p>
+<p>The OpenGIS® Web Processing Service (WPS) Interface Standard provides rules for standardizing how inputs and outputs (requests and responses) for geospatial processing services, such as polygon overlay. The standard also defines how a client can request the execution of a process, and how the output from the process is handled. It defines an interface that facilitates the publishing of geospatial processes and clients’ discovery of and binding to those processes. The data required by the WPS can be delivered across a network or they can be available at the server.</p>
 </div>
 </div>
 </div>
@@ -379,8 +307,7 @@ NOTE: All personal information will be removed when an internal document is made
 <p><em>(Mandatory)</em></p>
 </div>
 <div class="paragraph">
-<p>This document defines specific Defence requirements, recommendations and guidelines for
-implementations of the OGC Web Processing Service (WPS) standard (document number 14-065), version 2.0.</p>
+<p>This document defines specific Defence requirements, recommendations and guidelines for implementations of the OGC Web Processing Service (WPS) standard (document number 14-065), version 2.0.</p>
 </div>
 </div>
 </div>
@@ -575,28 +502,79 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <h2 id="_wps_2_0_presentation_informative"><a class="anchor" href="#_wps_2_0_presentation_informative"></a>6. WPS 2.0 presentation (informative)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_wps_core_conceptual_model"><a class="anchor" href="#_wps_core_conceptual_model"></a>6.1. WPS Core conceptual model</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_process_model"><a class="anchor" href="#_process_model"></a>6.2. Process model</h3>
+<h3 id="_introduction_2"><a class="anchor" href="#_introduction_2"></a>6.1. Introduction</h3>
 <div class="paragraph">
-<p><em>Description of the operation</em></p>
+<p>Version 2.0 of OGC WPS (<a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>) defines :</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>a Core conceptual model that may be used to specify a WPS in different architectures such as REST or SOAP,</p>
+</li>
+<li>
+<p>a process model to support the description and discovery of processes on the web,</p>
+</li>
+<li>
+<p>a basic data model that supports arbitrary (standard or non-standard) data formats for inputs and outputs,</p>
+</li>
+<li>
+<p>a WPS service model and encoding based on OGC baseline standards, and</p>
+</li>
+<li>
+<p>a Dismiss extension to allow clients to terminate asynchronous processing jobs.</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="_basic_data_model"><a class="anchor" href="#_basic_data_model"></a>6.3. Basic data model</h3>
-
-</div>
-<div class="sect2">
-<h3 id="_wps_service_model_and_dissmiss_extension"><a class="anchor" href="#_wps_service_model_and_dissmiss_extension"></a>6.4. WPS service model and dissmiss extension</h3>
 <div class="paragraph">
-<p><em>Description of the 6 extensions (5 from the service model + dissmiss</em></p>
+<p>The WPS service model defines five operations, the Dismiss operation (allowing a user to cancel a job) being defined as an extension to it:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><em>GetCapabilities</em> (mandatory): returns service metadata,</p>
+</li>
+<li>
+<p><em>DescribeProcess</em> (mandatory): returns the description of a specific process,</p>
+</li>
+<li>
+<p><em>Execute</em> (mandatory): creates a job to run a specific process,</p>
+</li>
+<li>
+<p><em>GetStatus</em>: returns status information about a processing job,</p>
+</li>
+<li>
+<p><em>GetResult</em>: returns the result of a processing job,</p>
+</li>
+</ul>
 </div>
-<div class="sect2">
-<h3 id="_bindings"><a class="anchor" href="#_bindings"></a>6.5. Bindings</h3>
-
+<div class="paragraph">
+<p>Two bindings are defined for these operations : HTTP/POST+XML and HTTP/GET+KVP (excepted for the <em>Execute</em> operation).</p>
+</div>
+<div class="paragraph">
+<p>Conformity to the standard is organized with five conformance classes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Basic WPS service profile</p>
+</li>
+<li>
+<p>Synchronous WPS</p>
+</li>
+<li>
+<p>Asynchronous WPS</p>
+</li>
+<li>
+<p>WPS process model encoding</p>
+</li>
+<li>
+<p>Dismiss extension</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The "<em>basic WPS service profile</em>"  defines a minimal WPS implementation that comprises the synchronous and asynchronous execution protocol, the WPS process model, and implements HTTP/POST+XML and HTTP/GET+KVP encodings.</p>
+</div>
 </div>
 </div>
 </div>
@@ -604,7 +582,7 @@ artefact claiming to implement the DGIWG WPS profile.</p>
 <h2 id="_dgiwg_wps_basic_normative"><a class="anchor" href="#_dgiwg_wps_basic_normative"></a>7. DGIWG WPS basic (Normative)</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_2"><a class="anchor" href="#_introduction_2"></a>7.1. Introduction</h3>
+<h3 id="_introduction_3"><a class="anchor" href="#_introduction_3"></a>7.1. Introduction</h3>
 <div class="paragraph">
 <p>This chapter defines normative requirements to implement DGIWG WPS basic conformance class.</p>
 </div>
@@ -728,6 +706,15 @@ For each of these operation, at least one binding has to be supported (HTTP/GET+
 <div class="sect3">
 <h4 id="_getcapabilities_operation"><a class="anchor" href="#_getcapabilities_operation"></a>7.4.1. GetCapabilities operation</h4>
 <div class="paragraph">
+<p>Following figure illustrates different parts of the GetCapabilities response document.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="./images/Capabilities.png" alt="WPS_Capabilities">
+</div>
+<div class="title">Figure 1. GetCapabilities response document UML class diagram (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
+</div>
+<div class="paragraph">
 <p><strong><em>Requirement 2: a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <a href="#get_cap_serviceID">Table 4</a>, <a href="#get_cap_serviceProvider">Table 5</a>, <a href="#get_cap_OperationsMetadata">Table 6</a>, <a href="#get_cap_Language">Table 7</a> and <a href="#process_sum">Table 8</a>.</em></strong></p>
 </div>
 <div class="paragraph">
@@ -735,6 +722,9 @@ For each of these operation, at least one binding has to be supported (HTTP/GET+
 </div>
 <div class="paragraph">
 <p><strong><em>Requirement 4: a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB".</em></strong></p>
+</div>
+<div class="paragraph">
+<p><strong><em>Requirement 5: If content provided by a WFS server is classified, a DGIWG Basic WPS server shall identify the highest classification level of the content accessible through the WFS service by populating the accessConstraints element.</em></strong></p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -747,12 +737,6 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 </td>
 </tr>
 </table>
-</div>
-<div class="imageblock text-center">
-<div class="content">
-<img src="./images/Capabilities.png" alt="WPS_Capabilities">
-</div>
-<div class="title">Figure 1. GetCapabilities reponse document UML class diagram (source <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</div>
 </div>
 <div class="paragraph">
 <p>Following tables describes adittional requirements for filling in GetCapabilities response document.</p>
@@ -781,14 +765,14 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <td class="tableblock halign-left valign-top"><p class="tableblock">A service type URN from a registry of services, normally used for machine-to-machine communication.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URN</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory) <strong><em>Fixed to "WPS"</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no change</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">serviceTypeVersion</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Versions of this service type implemented by this server.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Character string type, not empty</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory) <strong><em>Shall contain at least value 2.0.2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no change</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">profile</p></td>
@@ -802,7 +786,7 @@ for example <em>title</em>, <em>abstract</em> and <em>keywords</em> elements are
 <td class="tableblock halign-left valign-top"><p class="tableblock">Title of this server, normally used for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">LanguageString data structure, see Figure 15</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One or more (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no change</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">abstract</p></td>
@@ -952,7 +936,7 @@ The contents of the CI_ResponsibleParty class are modified to omit the optional 
 <td class="tableblock halign-left valign-top"><p class="tableblock">Languages</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">List of languages supported by the server.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or One (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One (or more), at least english.</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One containing at least english.</em></strong></p></td>
 </tr>
 </tbody>
 </table>
@@ -987,14 +971,14 @@ nothing to be added here ?</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Title of a process, normally available for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Title</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One (mandatory). it shall be English.</em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Abstract</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brief narrative description of a process, normally available for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Abstract</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One or more (At least english).</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>One containing at least english.</em></strong></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Keywords</p></td>
@@ -1120,7 +1104,7 @@ nothing to be added here ?</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Percentage of process that has been completed.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Integer{0..100}</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or one (optional) Include if available.</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>recommendation ?</mark></p></td>
 </tr>
 </tbody>
 </table>
@@ -1385,80 +1369,7 @@ owsServiceProvider.xsd</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="UMLModel"><a class="anchor" href="#UMLModel"></a>Appendix C: UML model</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>A UML model may be relevant to an Engineering Report. This template thus includes this annex as the place for recording this UML model.</p>
-</div>
-<div class="paragraph">
-<p>Instructions and guidelines on the usage of UML models are provided in OGC document <a href="https://portal.opengeospatial.org/files/?artifact_id=38867"> OGC-121r9</a>.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="RevisionHistory"><a class="anchor" href="#RevisionHistory"></a>Appendix D: Revision History</h2>
-<div class="sectionbody">
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Note</div>
-</td>
-<td class="content">
-<div class="title">Example History (Delete this note).</div>
-<div class="paragraph">
-<p>replace below entries as needed</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<table class="tableblock frame-all grid-all" style="width: 90%;">
-<caption class="title">Table 14. Revision History</caption>
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-<col style="width: 20%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Date</th>
-<th class="tableblock halign-left valign-top">Editor</th>
-<th class="tableblock halign-left valign-top">Release</th>
-<th class="tableblock halign-left valign-top">Primary clauses modified</th>
-<th class="tableblock halign-left valign-top">Descriptions</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">August 23, 2019</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">second version</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 18, 2018</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D. Sarafinof</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">initial version</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">July 24, 2016</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">WSTP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">.2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">all</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">comments integrattion</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Appendix E: Bibliography</h2>
+<h2 id="Bibliography"><a class="anchor" href="#Bibliography"></a>Appendix C: Bibliography</h2>
 <div class="sectionbody">
 
 </div>
@@ -1466,7 +1377,7 @@ owsServiceProvider.xsd</pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2019-08-22 10:11:39 +0200
+Last updated 2019-10-11 13:06:15 +0200
 </div>
 </div>
 <link rel="stylesheet" href="resources/stylesheets/coderay-asciidoctor.css">
