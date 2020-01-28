@@ -11,4 +11,4 @@ Common understanding, interoperability and reusability of web processing service
 
 1. [DGIWG profile of OGC WPS 2.0](https://github.com/DGIWG/P5.05-WPS/tree/master/profile_std)
 
-2. [DGIWG generic process profiles](https://github.com/DGIWG/P5.05-WPS/tree/master/profile_std)
+2. [DGIWG generic process profiles](https://github.com/DGIWG/P5.05-WPS/tree/master/processes_std)
