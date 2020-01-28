@@ -113,7 +113,7 @@ Output
 	  Identifier	distance_results
 	  Title	Distance results
 	  Keywords
-	  Abstract	Result set containing indivual distance between each point pair and/or the sum. This should include uom.
+	  Abstract	Result set containing individual distance between each point pair and/or the sum. This should include uom.
 	  Metadata
 
 ==== Process implementation : distance measurement
