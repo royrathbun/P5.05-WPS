@@ -1,0 +1,82 @@
+:bibtex-file: ../resources/bibtex-file.bib
+:bibtex-style: ../resources/lncs.csl
+
+==== Generic process : Viewshed analysis
+
+  	  Identifier	http://www.dgiwg.org/service/processing/process/viewshed
+  	  Title	Viewshed analysis
+  	  Keywords	visibility, sight
+  	  Abstract	Visibility of one observer around him (at 360°)
+  	  Metadata
+
+===== Input: Elevation data
+
+  	  Identifier	elavation_data
+  	  Title	Elevation data
+  	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+  	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+  	  Metadata
+  	  Multiplicity	0..1
+  	  Data format	raster, tif
+
+===== Input: Marker/point(s) denoting observer(s)
+
+  	  Identifier	observer_position
+  	  Title	Marker/point(s) denoting observer(s)
+  	  Keywords	observer
+  	  Abstract	Marker/point(s) in a given CRS.
+  	  Metadata
+  	  Multiplicity	1
+
+===== Input: Height of observer
+
+  	  Identifier	observer_height
+  	  Title	Height of observer
+  	  Keywords	observer, height
+  	  Abstract	Eye-level height of observer(s).
+  	  Metadata
+  	  Multiplicity	1
+
+===== Input: Line of sight target
+
+  	  Identifier	target_height
+  	  Title	Line of sight target
+  	  Keywords	observer, height, target
+  	  Abstract	Height of observable objects
+  	  Metadata
+  	  Multiplicity	1
+
+===== Input: Line of sight distance
+
+  	  Identifier	viewshed_distance
+  	  Title	Line of sight distance
+  	  Keywords	observer, distance, target
+  	  Abstract	Limit of viewshed analysis
+  	  Metadata
+  	  Multiplicity	1
+
+===== Input: Earth curvature
+
+  	  Identifier	earth_curvature
+  	  Title	Earth curvature
+  	  Keywords	curvature
+  	  Abstract	Whether earth curvature shall be taken into account or not.
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Input: Atmosphere refraction
+
+  	  Identifier	Athm_refraction
+  	  Title	Atmosphere refraction
+  	  Keywords	refraction
+  	  Abstract	Whether Athmosphere refraction shall be taken into account or not.
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Output: Viewshed results
+
+  	  Identifier	viewshed_results
+  	  Title	Viewshed results
+  	  Keywords
+  	  Abstract	The unimpeded view or access from one point to another point across a terrain or surface.  Compound line of sight results in areas visible by multiple observers.
+  	  Metadata

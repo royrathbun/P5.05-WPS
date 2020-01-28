@@ -50,7 +50,7 @@
 :publicationDate: DD-MM-YYYY
 :approvalDate: DD-MM-YYYY
 :referenceURLID: ID
-:copyrightYear: 2019
+:copyrightYear: 2020
 //
 :titletext: {title}
 :doctype: book
@@ -71,9 +71,6 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 [.text-center]
 = {docReference} + {title}
 
-
-
-
 [#front_page,reftext='{table-caption}']
 [cols="25,85"]
 !===
@@ -81,9 +78,9 @@ image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 // subtype and profile of may be used for Standard
 |Document subtype:	| Implementation profile
 |Profile of:	| NaN
-|Document date:	| dd month yyyy
+|Document date:	| 28 January 2020
 // The x.x.x. designation is not used for draft documents. See DGIWG – 920 for additional details.
-|Edition number:	| x.x.x
+|Edition number:	| 0.3.0
 // Superseedes shall be used for document resvision (version >1.0)
 |Supersedes: 	| DGIWG – XXX Ed. x.x.x, Title, dated 'day' 'month' 'year'
 |Responsible Party: 	| DGIWG

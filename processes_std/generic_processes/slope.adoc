@@ -1,0 +1,48 @@
+:bibtex-file: ../resources/bibtex-file.bib
+:bibtex-style: ../resources/lncs.csl
+
+==== Generic process : Slope analysis
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/slope
+	  Title	Slope analysis
+	  Keywords	slope
+	  Abstract	Calculates the slope on a given area of interest. Slope may be percentage or angle in degrees. Result is a raster coverage.
+	  Metadata
+
+===== Input: Area of interest
+
+	  Identifier	aoi
+	  Title	Area of interest
+	  Keywords
+	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
+	  Metadata
+	  Multiplicity	1
+
+===== Input: Elevation data
+
+	  Identifier	elavation_data
+	  Title	Elevation data
+	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Slope units
+
+[WARNING]
+is-it UOM ?
+
+	  Identifier	slope_units
+	  Title	Slope units
+	  Keywords	slope, units, degrees, percentage
+	  Abstract	Units to be used for the slope measurement.
+	  Metadata
+	  Multiplicity	1
+
+===== Output: Slope analysis results
+
+	  Identifier	slope_results
+	  Title	Slope analysis results
+	  Keywords slope, analysis
+	  Abstract	Slope (in degrees or percentage) calculated by the analysis representing  the steepness of each cell. This may also contain metadata describing the data sources and the units used.
+	  Metadata

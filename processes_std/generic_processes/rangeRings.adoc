@@ -1,0 +1,63 @@
+:bibtex-file: ../resources/bibtex-file.bib
+:bibtex-style: ../resources/lncs.csl
+
+==== Generic process : Range rings
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/rangerings
+	  Title	Range rings analysis
+	  Keywords radius, range
+	  Abstract	It creates ranges rings. Two methods are proposed, either by providing a list of radius values (radius_value), or by providing a number of rings (rings_nb) and an equal spacing (rings_spacing). Radials may be added (radials_nb) to divide range rings into sectors.
+	  Metadata
+
+===== Input: A center point
+
+	  Identifier	center_point
+	  Title	A center point
+	  Keywords
+	  Abstract	A center point from which the rings will be defined in a given CRS.
+	  Metadata
+	  Multiplicity	1
+
+===== Input: Radius value(s)
+
+	  Identifier	radius_value
+	  Title	Radius value(s)
+	  Keywords radius
+	  Abstract	One or more radius value(s) with UOM defining the range(s) around the center point.
+	  Metadata
+	  Multiplicity	0..n
+
+===== Input: Number of rings
+
+	  Identifier	rings_nb
+	  Title	Number of rings
+	  Keywords
+	  Abstract	The number of ring(s) around the center points, with an equal space (rings_spacing).
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Spacing between rings
+
+	  Identifier	rings_spacing
+	  Title	Spacing between rings
+	  Keywords
+	  Abstract	The spacing with UOM that is used to create ring_nb ring(s).
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Number of radials
+
+	  Identifier	radials_nb
+	  Title	Number of radials
+	  Keywords
+	  Abstract	The number of the radials dividing the range rings into sectors.
+	  Metadata
+	  Multiplicity	0..1
+
+===== Output: Range rings
+
+	  Identifier	range_rings
+	  Title	Range rings
+	  Keywords
+	  Abstract	A geometry representing the created range rings and optional radials.
+	  Metadata

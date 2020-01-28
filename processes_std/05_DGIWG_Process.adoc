@@ -12,7 +12,7 @@ The Normative requirements requested by this conformance class are summarized in
 |No. | Requirement | Compliance
 |{counter:process_req_table} | a DGIWG generic process profile shall satisfy requirements from http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic (<<OGC-WPS-2.0>>) requirement class.| M
 |{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req2>> for the description of a DGIWG generic process.| M
-|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| mail
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| M
 |{counter:process_req_table} | a DGIWG generic process profile shall be documented using template provided in Annex XX. | M
 !===
 

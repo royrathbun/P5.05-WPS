@@ -6,11 +6,18 @@ _(Mandatory for standards)_
 This document establishes xx conformance classe(s):
 
 - DGIWG process,
-- DGIWG generic xxx process profile,
-- #...#
+- DGIWG generic process profile for elevation analysis,
+- DGIWG generic process profile for distance measurement,
+- DGIWG generic process profile for range rings,
+- DGIWG generic process profile for viewshed analysis,
+- DGIWG generic process profile for slope analysis,
+- DGIWG generic process profile for helicopter landing zone,
+- DGIWG generic process profile for routing,
+- DGIWG generic process profile for geopackage creation,
+
 
 _"DGIWG process"_ class define requirements for defining generic process description
-_"DGIWG generic xxx process profile"_ classes defines generic process profiles according to "DGIWG process" conformance class. Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. These generic processes profiles can be implemented by OGC WPS standards (verions 1 or 2) or possibliby other geoprocessing APIs.
+_"DGIWG generic process profile for XX"_ classes defines generic process profiles according to "DGIWG process" conformance class. Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. These generic processes profiles can be implemented by OGC WPS standards (versions 1 or 2) or possibly other geoprocessing APIs.
 Annex A lists the conformance abstract tests which shall be exercised on process profiles claiming to implement these conformance classes.
 
 [#conf,reftext='{table-caption} {counter:table-num}']
@@ -19,10 +26,11 @@ Annex A lists the conformance abstract tests which shall be exercised on process
 !===
 |Conformance class name |Operation or behavior | OGC WPS Conformance Test | DGIWG WPS Conformance Test
 |DGIWG process  http://www.dgiwg.org/std/geoprocessing/1.0/conf/process | DGIWG requirement y to z | - | Annex A.1
-|DGIWG generic measurement process profile  http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-measurement | DGIWG requirement y to z | - | Annex A.2.1
-|DGIWG generic elevation process profile http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-elevation | DGIWG requirement y to z | - | Annex A.2.2
-|#DGIWG generic xxxx process profile http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-xxxx#| DGIWG requirement y to z | - | Annex A.2.3
+|DGIWG generic process profile for elevation analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-elevationAnalysis | DGIWG requirement y to z | - | Annex A.2.1
+|DGIWG generic process profile for distance measurement http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-distanceMeasurement | DGIWG requirement y to z | - | Annex A.2.2
+|DGIWG generic process profile for #xxx# http://www.dgiwg.org/std/geoprocessing/1.0/conf/generic-xxx| DGIWG requirement y to z | - | Annex A.2.3
 !===
-
+[WARNING]
+table to be updated accordingly to processes description
 
 === Backward compatibility
