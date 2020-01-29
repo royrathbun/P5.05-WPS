@@ -28,6 +28,8 @@ The Normative requirements requested by this conformance class are summarized in
 
 === Elevation analysis
 
+*_Requirement {counter:process_req}: a DGIWG process for elevation analysis shall implement input and ouput accordingly to  <<_elevation_analysis>>._*
+
 include::generic_processes/elevationAnalysis.adoc[]
 
 ==== Process implementation : elevation analysis
