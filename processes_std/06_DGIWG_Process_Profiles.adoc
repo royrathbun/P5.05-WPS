@@ -69,11 +69,11 @@ include::{sourcedir}/rangeRings.xml[]
 
 === Viewshed analysis
 
-include::generic_processes/viewshed.adoc[]
+include::generic_processes/viewshedAnalysis.adoc[]
 
 === Slope
 
-include::generic_processes/slope.adoc[]
+include::generic_processes/slopeAnalysis.adoc[]
 
 === Helicopter Landing Zone
 
@@ -85,4 +85,4 @@ include::generic_processes/routing.adoc[]
 
 === Geopackage
 
-include::generic_processes/geopackage.adoc[]
+include::generic_processes/geopackageCreation.adoc[]
