@@ -12,7 +12,7 @@ The Normative requirements requested by this conformance class are summarized in
 |No. | Requirement | Compliance
 |{counter:process_req_table} | a DGIWG generic process profile shall satisfy requirements from http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic (<<OGC-WPS-2.0>>) requirement class.| M
 |{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req2>> for the description of a DGIWG generic process.| M
-|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| mail
+|{counter:process_req_table} | a DGIWG generic process profile shall additionaly provide elements according to <<dgiwg_process_req3>> for the description of input/output parameters.| M
 |{counter:process_req_table} | a DGIWG generic process profile shall be documented using template provided in Annex XX. | M
 !===
 
@@ -63,7 +63,7 @@ For convenience, detailed requirement from <<>> are repeated below:
 | Keywords | Keywords that characterize a process, its inputs, and outputs. | ows:Keywords | Zero or more (optional) Include when available and useful. | Mandatory (at least one)
 | Identifier | Unambiguous identifier of a process. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/process/{process-name}.
 | Metadata | to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
-| Language | Language identifier for the human readable process description elements. | Character String. This language identifier shall be as specified in IETF RFC 4646. | One (mandatory) | English is mandatory in a coalition implementation (en-EN)
+| Language | Language identifier for the human readable process description elements. | Character String. This language identifier shall be as specified in IETF RFC 4646. | One (mandatory) | English is mandatory in a coalition implementation (en-GB)
 | Input | Input items (arguments) of a process. | GenericInput structure, see Table 167. | Zero or more (optional) | no change
 | Output | Output items (results) of a process | GenericOutput structure, see Table 178. | One or more (mandatory) | no change
 !===

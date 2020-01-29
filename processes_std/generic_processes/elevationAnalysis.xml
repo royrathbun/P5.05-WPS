@@ -18,6 +18,7 @@
 	HTML page providing human readable description of the generic profile with examples.
 	-->
 	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html"/>
+	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="generic_processes/elevationAnalysis.html"/>
 	<wps:Input>
 		<ows:Title>Area of interest</ows:Title>
 		<ows:Abstract>Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry (GM_Surface).</ows:Abstract>

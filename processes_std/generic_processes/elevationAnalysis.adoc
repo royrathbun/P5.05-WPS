@@ -1,0 +1,45 @@
+:bibtex-file: ../resources/bibtex-file.bib
+:bibtex-style: ../resources/lncs.csl
+
+==== Generic process: Elevation analysis
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/elevationanalysis
+	  Title	Elevation analysis
+	  Keywords	elevation, analysis, highest point, lowest point
+	  Abstract	It provides lowest and highest point(s) on a given area.
+	  Metadata
+
+===== Input: Area of interest
+
+	  Identifier	aoi
+	  Title Area of interest
+	  Keywords
+	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
+	  Metadata
+	  Multiplicity	1
+
+===== Input: Elevation data
+
+	  Identifier	elavation_data
+	  Title	Elevation data
+	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
+	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Choice of highest or lowest points
+
+	  Identifier	analysis_type
+	  Title	Choice of highest or lowest points
+	  Keywords
+	  Abstract	Information providing if highest or lowest.
+	  Metadata
+	  Multiplicity	1
+
+===== Output: Highest or lowest points
+
+	  Identifier	result_points
+	  Title	Highest or lowest points
+	  Keywords
+	  Abstract	Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
+	  Metadata

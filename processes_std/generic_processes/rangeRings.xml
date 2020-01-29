@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wps:GenericProcess
+	xmlns:ows="http://www.opengis.net/ows/2.0"
+	xmlns:wps="http://www.opengis.net/wps/2.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd">
+	<ows:Title>Range rings analysis</ows:Title>
+	<ows:Abstract>It creates ranges rings. Two methods are proposed, either by providing a list of radius values (radius_value), or by providing a number of rings (rings_nb) and an equal spacing (rings_spacing). Radials may be added (radials_nb) to divide range rings into sectors.</ows:Abstract>
+	<ows:Keywords>
+		<ows:Keyword>radius</ows:Keyword>
+		<ows:Keyword>range</ows:Keyword>
+	</ows:Keywords>
+	<ows:Identifier>http://www.dgiwg.org/service/processing/process/rangerings</ows:Identifier>
+	<!--
+	HTML page providing human readable description of the generic profile with examples.
+	-->
+	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html"/>
+	<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="generic_processes/rangeRings.html"/>
+	<wps:Input>
+		<ows:Title>A center point</ows:Title>
+		<ows:Abstract>A center point from which the rings will be defined in a given CRS.</ows:Abstract>
+		<ows:Identifier>center_point</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html#center_point"/>
+	</wps:Input>
+	<wps:Input>
+		<ows:Title>Radius value(s)</ows:Title>
+		<ows:Abstract>One or more radius value(s) with UOM defining the range(s) around the center point.</ows:Abstract>
+		<ows:Keywords>
+			<ows:Keyword>radius</ows:Keyword>
+		</ows:Keywords>
+		<ows:Identifier>radius_value</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html#radius_value"/>
+	</wps:Input>
+	<wps:Input>
+		<ows:Title>Number of rings</ows:Title>
+		<ows:Abstract>The number of ring(s) around the center points, with an equal space (rings_spacing).</ows:Abstract>
+		<ows:Identifier>rings_nb</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html#rings_nb"/>
+	</wps:Input>
+	<wps:Input>
+		<ows:Title>Spacing between rings</ows:Title>
+		<ows:Abstract>The spacing with UOM that is used to create ring_nb ring(s).</ows:Abstract>
+		<ows:Identifier>rings_spacing</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html#rings_spacing"/>
+	</wps:Input>
+	<wps:Input>
+		<ows:Title>Number of radials</ows:Title>
+		<ows:Abstract>The number of the radials dividing the range rings into sectors.</ows:Abstract>
+		<ows:Identifier>radials_nb</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/rangerings.html#radials_nb"/>
+	</wps:Input>
+	<wps:Output>
+		<ows:Title>Range rings</ows:Title>
+		<ows:Abstract>	A geometry representing the created range rings and optional radials.</ows:Abstract>
+		<ows:Identifier>range_rings</ows:Identifier>
+		<ows:Metadata xlink:role="http://www.opengis.net/spec/wps/2.0/def/process/description/documentation" xlink:href="http://www.dgiwg.org/service/processing/process/elevationanalysis.html#result_points"/>
+	</wps:Output>
+</wps:GenericProcess>

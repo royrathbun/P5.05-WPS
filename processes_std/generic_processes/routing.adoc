@@ -1,0 +1,103 @@
+:bibtex-file: ../resources/bibtex-file.bib
+:bibtex-style: ../resources/lncs.csl
+
+==== Generic process : Routing
+
+[WARNING]
+to be checked if conistency with OGC routing API pilot is wanted
+https://app.swaggerhub.com/apis/cportele/wps-routing-api/1.0.0#/Option%20WPS/getProcessDescription
+
+	  Identifier	http://www.dgiwg.org/service/processing/process/routing
+	  Title	Routing
+	  Keywords	route
+	  Abstract	It provides route according specified parameters.
+	  Metadata
+
+===== Input: Way points
+
+	  Identifier	way_points
+	  Title	Way points
+	  Keywords
+	  Abstract	A list of points along the route. At least two points have to be provided (start and end point).
+	  Metadata
+	  Multiplicity	2..n
+
+===== Input: Routing preference
+
+	  Identifier	preference
+	  Title	Routing preference
+	  Keywords	shortest, fastest
+	  Abstract	The routing preference (shortest, fastest or other specific by the service or API). Fastest is the default value.
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Maximum height of the vehicle
+
+	  Identifier	max_height
+	  Title	Maximum height of the vehicle
+	  Keywords
+	  Abstract	A height restriction for vehicles in meters to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Maximum weight of the vehicle
+
+	  Identifier	max_weight
+	  Title	Maximum weight of the vehicle
+	  Keywords
+	  Abstract	A weight restriction for vehicles in tons to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
+	  Metadata
+	  Multiplicity	0..1
+
+===== Input: Input dataset
+
+  	  Identifier	dataset
+  	  Title	Input dataset
+  	  Keywords
+  	  Abstract	The source dataset to use for calculating the route.
+  	  Metadata
+  	  Multiplicity	1
+
+===== Input: Routing engine
+
+  	  Identifier	engine
+  	  Title	Routing engine
+  	  Keywords
+  	  Abstract	The routing engine to use for calculating the route.
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Input: Graph solving algorithm
+
+  	  Identifier	algorithm
+  	  Title	Graph solving algorithm
+  	  Keywords
+  	  Abstract	The routing / graph solving algorithm to use for calculating the route.
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Input: Time of departure or arrival
+
+  	  Identifier	when
+  	  Title	Time of departure or arrival
+  	  Keywords
+  	  Abstract	 The time of departure or arrival. Default is "now".
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Input: Departure
+
+  	  Identifier	departure
+  	  Title	Departure
+  	  Keywords
+  	  Abstract	Specifies whether the value of `when` refers to the time of departure or arrival. Default is departure.
+  	  Metadata
+  	  Multiplicity	0..1
+
+===== Output: Calculated route
+
+  	  Identifier	route
+  	  Title	Calculated route
+  	  Keywords
+  	  Abstract	Calculated route according specified parameters.
+  	  Metadata

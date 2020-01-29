@@ -1,64 +1,36 @@
-== DGIWG Processes Description (Normative)
+measurement== DGIWG Processes Description (Normative)
 
 === Introduction
-This chapter defines DGIWG processes at a generic level. These definitions may be implemented through WPS or other APIs.
-Following DGIWG processes are desribed below:
+This chapter defines DGIWG processes at a generic level. These definitions are conformant to *_"DGIWG process"_* conformance class; they may be implemented through WPS or other APIs.
+Following DGIWG processes are described below:
 
  - elevation analysis
- - distance mesurement
+ - distance measurement
  - range rings
- - viewshed
- - slope
+ - viewshed analysis
+ - slope analysis
  - helicopter landing zone
  - geocoding
  - routing
- - geopackage
+ - geopackage creation
+
+== Normative requirements
+The Normative requirements requested by this conformance class are summarized in <<dgiwg_process_profiles_req>>.
+[#dgiwg_process_profiles_req,reftext='{table-caption} {counter:table-num}']
+[cols="1,10,1",options="header"]
+.DGIWG process profiles Normative Requirements
+!===
+|No. | Requirement | Compliance
+|{counter:process_req_table} | a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <<_elevation_analysis>>.| M
+|{counter:process_req_table} | a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <<_distance_measurement>>.| M
+|{counter:process_req_table} | a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <<_range_rings>>.| M
+!===
 
 === Elevation analysis
-==== Generic process : elevation analysis
 
-Process
+*_Requirement {counter:process_req}: a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <<_elevation_analysis>>._*
 
-	  Identifier	http://www.dgiwg.org/service/processing/process/elevationanalysis
-	  Title	Elevation analysis
-	  Keywords	elevation, analysis, highest point, lowest point
-	  Abstract	It provides lowest and highest point(s) on a given area.
-	  Metadata
-
-Input
-
-	  Identifier	aoi
-	  Title	Area of interest
-	  Keywords
-	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	elavation_data
-	  Title	elevationData
-	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
-	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	analysis_type
-	  Title	Choice of highest or lowest points
-	  Keywords
-	  Abstract	Information providing if highest or lowest.
-	  Metadata
-	  Multiplicity	1
-
-Output
-
-	  Identifier	result_points
-	  Title	Highest or lowest points
-	  Keywords
-	  Abstract	Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
-	  Metadata
+include::generic_processes/elevationAnalysis.adoc[]
 
 ==== Process implementation : elevation analysis
 
@@ -69,54 +41,13 @@ Find below a WPS 2.0 example of the elevation analysis generic process profile.
 [source,xml]
 include::{sourcedir}/elevationAnalysis.xml[]
 
-=== Distance mesurement
+=== Distance measurement
 
-==== Generic process : distance measurement
+*_Requirement {counter:process_req}: a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <<_distance_measurement>>._*
 
-Process
+include::generic_processes/distanceMeasurement.adoc[]
 
-	  Identifier	http://www.dgiwg.org/service/processing/process/distancemeasurement
-	  Title	Distance measurement
-	  Keywords	distance
-	  Abstract	It provides the distance between two or more points.
-	  Metadata
-
-Input
-
-	  Identifier	points_list
-	  Title	List of points
-	  Keywords
-	  Abstract	List of two or more points in a given CRS. CRS may be 2D or 3D (with Z or height information).
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	measurement_method
-	  Title	Method of measurement
-	  Keywords
-	  Abstract	Method of measurement to be used for the calculation (for example euclidean, geodesic, …). This could include Z coordinate (or height above elispoid).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	uom
-	  Title	Unit of measure
-	  Keywords
-	  Abstract	Unit of measure for the measured distance(s) to be returned.
-	  Metadata
-	  Multiplicity	1
-
-Output
-
-	  Identifier	distance_results
-	  Title	Distance results
-	  Keywords
-	  Abstract	Result set containing indivual distance between each point pair and/or the sum. This should include uom.
-	  Metadata
-
-==== Process implementation : distance measurement
+===== Process implementation : distance measurement
 
 Find below a WPS 2.0 example of the distance measurement generic process profile.
 
@@ -125,426 +56,47 @@ Find below a WPS 2.0 example of the distance measurement generic process profile
 [source,xml]
 include::{sourcedir}/distanceMeasurement.xml[]
 
+=== Range rings
 
-== Range rings
-
-=== Generic process : range rings
-
-Process
-
-	  Identifier	http://www.dgiwg.org/service/processing/process/rangerings
-	  Title	Range rings analysis
-	  Keywords
-	  Abstract	It creates ranges rings. Two methods are proposed, either by providing a list of radius values (radius_value), or by providing a number of rings (rings_nb) and an equal spacing (rings_spacing). Radials may be added (radials_nb) to divide range rings into sectors.
-	  Metadata
-
-Input
-
-	  Identifier	center_point
-	  Title	A center point.
-	  Keywords
-	  Abstract	A center point from which the rings will be defined in a given CRS.
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	radius_value
-	  Title	Radius value(s)
-	  Keywords
-	  Abstract	One or more radius value(s) with UOM defining the range(s) around the center point.
-	  Metadata
-	  Multiplicity	0..n
-
-Input
-
-	  Identifier	rings_nb
-	  Title	Number of rings
-	  Keywords
-	  Abstract	The number of ring(s) around the center points, with an equal space (rings_spacing).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	rings_spacing
-	  Title	Spacing between rings
-	  Keywords
-	  Abstract	The spacing with UOM that is used to create ring_nb ring(s).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	radials_nb
-	  Title	Number of radials
-	  Keywords
-	  Abstract	Number of the radials dividing the range rings into sectors.
-	  Metadata
-	  Multiplicity	0..1
-
-Output
-
-	  Identifier	range_rings
-	  Title	Range rings
-	  Keywords
-	  Abstract	A geometry representing the created range rings and optional radials.
-	  Metadata
-
-== Viewshed analysis
-=== Generic process : viewshed analysis
-
-Process
-
-  	  Identifier	http://www.dgiwg.org/service/processing/process/viewshed
-  	  Title	Viewshed
-  	  Keywords	visibility, sight
-  	  Abstract	Visibility of one observer around him (at 360°)
-  	  Metadata
-
-Input
-
-  	  Identifier	elavation_data
-  	  Title	Elevation data
-  	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
-  	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
-  	  Metadata
-  	  Multiplicity	0..1
-  	  Data format	raster, tif
-
-Input
-
-  	  Identifier	observer_position
-  	  Title	Marker/point(s) denoting observer(s)
-  	  Keywords	observer
-  	  Abstract	Marker/point(s) in a given CRS.
-  	  Metadata
-  	  Multiplicity	1
-
-Input
-
-  	  Identifier	observer_height
-  	  Title	Height of observer
-  	  Keywords	observer, height
-  	  Abstract	Eye-level height of observer(s).
-  	  Metadata
-  	  Multiplicity	1
-
-Input
-
-  	  Identifier	target_height
-  	  Title	Line of sight target
-  	  Keywords	observer, height, target
-  	  Abstract	Height of observable objects
-  	  Metadata
-  	  Multiplicity	1
-
-Input
-
-  	  Identifier	viewshed_distance
-  	  Title	Line of sight distance
-  	  Keywords	observer, distance, target
-  	  Abstract	Limit of viewshed analysis
-  	  Metadata
-  	  Multiplicity	1
-
-Input
-
-  	  Identifier	earth_curvature
-  	  Title	Earth curvature
-  	  Keywords	curvature
-  	  Abstract	Whether earth curvature shall be taken into account or not.
-  	  Metadata
-  	  Multiplicity	0..1
-
-Input
-
-  	  Identifier	Athm_refraction
-  	  Title	Athmosphere refraction
-  	  Keywords	refraction
-  	  Abstract	Whether Athmosphere refraction shall be taken into account or not.
-  	  Metadata
-  	  Multiplicity	0..1
-
-Output
-
-  	  Identifier	viewshed_results
-  	  Title	Viewshed results
-  	  Keywords
-  	  Abstract	The unimpeded view or access from one point to another point across a terrain or surface.  Compound line of sight results in areas visible by multiple observers.
-  	  Metadata
-
-== Slope
-=== Generic process : slope
-
-Process
-
-	  Identifier	http://www.dgiwg.org/service/processing/process/slope
-	  Title	Slope analysis
-	  Keywords	slope
-	  Abstract	Calculates the slope on a given area of interest. Slope may be percentage or angle in degrees. Result is a raster coverage.
-	  Metadata
-
-Input
-
-	  Identifier	aoi
-	  Title	Area of interest
-	  Keywords
-	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	elavation_data
-	  Title	Elevation data
-	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
-	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	slope_units
-	  Title	Slope units
-	  Keywords	slope,units, degrees, percentage
-	  Abstract	Units to be used for the slope measurement.
-	  Metadata
-	  Multiplicity	1
-
-Output
-
-	  Identifier	slope_results
-	  Title	Slope analysis results
-	  Keywords
-	  Abstract	Slope (in degrees or percentage) calculated by the analysis representing  the steepness of  each cell. This may also contain metadata describing the data sources and the units used.
-	  Metadata
-
-== Helicopter Landing Zone
-=== Generic process : HLZ
-
-Process
-
-	  Identifier	http://www.dgiwg.org/service/processing/process/hlz
-	  Title	Helicopter Landing Zone
-	  Keywords	helicopter, landing zone, slope, obstacle
-	  Abstract	Helicopter landing zones contain one or more helicopter landing sites.
-	  Metadata
-
-Input
-
-	  Identifier	elevation_data
-	  Title	Elevation data
-	  Keywords	elevation, height, Digital Surface Model, Digital Elevation Model
-	  Abstract	Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	land_cover
-	  Title	Land cover
-	  Keywords	land, cover, vegetation, water, brush;
-	  Abstract	General land cover and vegetation types over areas of land, including water.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	max_slope_tolerance
-	  Title	Maximum slope tolerance
-	  Keywords	slope, units
-	  Abstract	The maximum slope tolerance with units (degrees or percentage).
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	min_radius
-	  Title	Minimum radius
-	  Keywords	radius
-	  Abstract	The minimum necessary radius of landing zone, based on aircraft used.  See aircraft specs or operational guidance.
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	height_tolerance
-	  Title	Surface obstructions height tolerance
-	  Keywords	z value, obstacle
-	  Abstract	Maximum size object suitable in HLZ with UOM ; ground clearance of aircraft.
-	  Metadata
-	  Multiplicity	1
-
-Output
-
-	  Identifier	hlz_results
-	  Title	HLZ analysis results
-	  Keywords
-	  Abstract	A coverage depicting zones large enough for a helicopter to land and take off.
-	  Metadata
-
-
-== Routing
-=== Generic process : routing
-
-Process
-
-	  Identifier	http://www.dgiwg.org/service/processing/process/routing
-	  Title	Routing
-	  Keywords	route
-	  Abstract	It provides route according specified parameters.
-	  Metadata
-
-Input
-
-	  Identifier	way_points
-	  Title	Way points
-	  Keywords
-	  Abstract	A list of points along the route. At least two points have to be provided (start and end point).
-	  Metadata
-	  Multiplicity	2..n
-
-Input
-
-	  Identifier	preference
-	  Title	Routing preference
-	  Keywords	shortest, fastest
-	  Abstract	The routing preference (shortest, fastest or other specific by the service or API). Fastest is the default value.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	max_height
-	  Title	Maximum height of the vehicle.
-	  Keywords
-	  Abstract	A height restriction for vehicles in meters to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	max_weight
-	  Title	Maximum weight of the vehicle.
-	  Keywords
-	  Abstract	A weight restriction for vehicles in tons to consider when computing the route. Support for this parameter is not required and the parameter may be removed from the API definition.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	max_weight
-	  Title	Maximum weight of the vehicle.
-	  Keywords
-	  Abstract	A weight restriction for vehicles in tons to consider when computing the route.Support for this parameter is not required and the parameter may be removed from the API definition.
-	  Metadata
-	  Multiplicity	0..1
-
-Output
-
-	  Identifier	result_points
-	  Title	Highest or lowest points
-	  Keywords
-	  Abstract	Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
-	  Metadata
-
-== Geopackage
-=== Generic process : geopackage
-
-Process
-
-	  Identifier	http://www.dgiwg.org/service/processing/process/geopackage
-	  Title	Geopackage creation
-	  Keywords	Geopackage, vector, raster, imagery, coverage
-	  Abstract	It provides geopackage file from input data.
-	  Metadata
-
-Input
-
-	  Identifier	aoi
-	  Title	Area of interest
-	  Keywords
-	  Abstract	Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry.. (GM_Surface)
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	name
-	  Title	Geopackage name
-	  Keywords
-	  Abstract	Name of the generated geopackage
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	description
-	  Title	Geopackage description
-	  Keywords
-	  Abstract	Description of the generated geopackage
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	data_sources
-	  Title	Data sources
-	  Keywords	tiles, chart maps, imagery, vector, elevation
-	  Abstract	Selection of input data to compute the geopackage file. A same source can contain different layers; desired layers to be package shall be specified in the request.
-	  Metadata
-	  Multiplicity	1..n
-
-Input
-
-	  Identifier	dataset
-	  Title	Input dataset
-	  Keywords
-	  Abstract	The source dataset to use for calculating the route.
-	  Metadata
-	  Multiplicity	1
-
-Input
-
-	  Identifier	engine
-	  Title	Routing engine
-	  Keywords
-	  Abstract	The routing engine to use for calculating the route.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	algorithm
-	  Title	graph solving algorithm
-	  Keywords
-	  Abstract	The routing / graph solving algorithm to use for calculating the route.
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	when
-	  Title	Time of departure or arrival
-	  Keywords
-	  Abstract	 The time of departure or arrival. Default is "now".
-	  Metadata
-	  Multiplicity	0..1
-
-Input
-
-	  Identifier	departure
-	  Title	Departure
-	  Keywords
-	  Abstract	Specifies whether the value of `when` refers to the time of departure or arrival. Default is departure.
-	  Metadata
-	  Multiplicity	0..1
-
-Output
-
-	  Identifier	route
-	  Title	Calculated route
-	  Keywords	gpkg
-	  Abstract	Calculated route according specified parameters.
-	  Metadata
+*_Requirement {counter:process_req}: a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <<_range_rings>>._*
+
+include::generic_processes/rangeRings.adoc[]
+
+==== Process implementation : range rings
+
+Find below a WPS 2.0 example of the range rings generic process profile.
+
+.rangeRings.xml
+:sourcedir: generic_processes
+[source,xml]
+include::{sourcedir}/rangeRings.xml[]
+
+=== Viewshed analysis
+
+*_Requirement {counter:process_req}: a DGIWG process for viewshed analysis shall implement a process description accordingly to parameters defined in <<_viewshed_analysis>>._*
+
+include::generic_processes/viewshedAnalysis.adoc[]
+
+=== Slope analysis
+
+*_Requirement {counter:process_req}: a DGIWG process for slope analysis shall implement a process description accordingly to parameters defined in <<_slope_analysis>>._*
+
+include::generic_processes/slopeAnalysis.adoc[]
+
+=== Helicopter Landing Zone
+
+*_Requirement {counter:process_req}: a DGIWG process for helicopter landing zone shall implement a process description accordingly to parameters defined in <<_helicopter_landing_zone>>._*
+
+include::generic_processes/hlz.adoc[]
+
+=== Routing
+
+*_Requirement {counter:process_req}: a DGIWG process for routing shall implement a process description accordingly to parameters defined in <<_routing>>._*
+
+include::generic_processes/routing.adoc[]
+
+=== Geopackage Creation
+
+*_Requirement {counter:process_req}: a DGIWG process for geopackage Creation implement a process description accordingly to parameters defined in <<_geopackage_creation>>._*
+
+include::generic_processes/geopackageCreation.adoc[]
