@@ -1,18 +1,18 @@
-== DGIWG Processes Description (Normative)
+measurement== DGIWG Processes Description (Normative)
 
 === Introduction
-This chapter defines DGIWG processes at a generic level. These definitions may be implemented through WPS or other APIs.
-Following DGIWG processes are desribed below:
+This chapter defines DGIWG processes at a generic level. These definitions are conformant to *_"DGIWG process"_* conformance class; they may be implemented through WPS or other APIs.
+Following DGIWG processes are described below:
 
  - elevation analysis
- - distance mesurement
+ - distance measurement
  - range rings
- - viewshed
- - slope
+ - viewshed analysis
+ - slope analysis
  - helicopter landing zone
  - geocoding
  - routing
- - geopackage
+ - geopackage creation
 
 == Normative requirements
 The Normative requirements requested by this conformance class are summarized in <<dgiwg_process_profiles_req>>.
@@ -21,14 +21,14 @@ The Normative requirements requested by this conformance class are summarized in
 .DGIWG process profiles Normative Requirements
 !===
 |No. | Requirement | Compliance
-|{counter:process_req_table} | a DGIWG process for elevation analysis shall implement input and ouput accordingly to  <<_elevation_analysis>>.| M
-|{counter:process_req_table} | a DGIWG process for elevation analysis shall implement input and ouput accordingly to  <<_distance_measurement>>.| M
-|{counter:process_req_table} | a DGIWG process for elevation analysis shall implement input and ouput accordingly to  <<_range_rings>>.| M
+|{counter:process_req_table} | a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <<_elevation_analysis>>.| M
+|{counter:process_req_table} | a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <<_distance_measurement>>.| M
+|{counter:process_req_table} | a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <<_range_rings>>.| M
 !===
 
 === Elevation analysis
 
-*_Requirement {counter:process_req}: a DGIWG process for elevation analysis shall implement input and ouput accordingly to  <<_elevation_analysis>>._*
+*_Requirement {counter:process_req}: a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <<_elevation_analysis>>._*
 
 include::generic_processes/elevationAnalysis.adoc[]
 
@@ -43,6 +43,8 @@ include::{sourcedir}/elevationAnalysis.xml[]
 
 === Distance measurement
 
+*_Requirement {counter:process_req}: a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <<_distance_measurement>>._*
+
 include::generic_processes/distanceMeasurement.adoc[]
 
 ===== Process implementation : distance measurement
@@ -55,6 +57,8 @@ Find below a WPS 2.0 example of the distance measurement generic process profile
 include::{sourcedir}/distanceMeasurement.xml[]
 
 === Range rings
+
+*_Requirement {counter:process_req}: a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <<_range_rings>>._*
 
 include::generic_processes/rangeRings.adoc[]
 
@@ -69,20 +73,30 @@ include::{sourcedir}/rangeRings.xml[]
 
 === Viewshed analysis
 
+*_Requirement {counter:process_req}: a DGIWG process for viewshed analysis shall implement a process description accordingly to parameters defined in <<_viewshed_analysis>>._*
+
 include::generic_processes/viewshedAnalysis.adoc[]
 
-=== Slope
+=== Slope analysis
+
+*_Requirement {counter:process_req}: a DGIWG process for slope analysis shall implement a process description accordingly to parameters defined in <<_slope_analysis>>._*
 
 include::generic_processes/slopeAnalysis.adoc[]
 
 === Helicopter Landing Zone
 
+*_Requirement {counter:process_req}: a DGIWG process for helicopter landing zone shall implement a process description accordingly to parameters defined in <<_helicopter_landing_zone>>._*
+
 include::generic_processes/hlz.adoc[]
 
 === Routing
 
+*_Requirement {counter:process_req}: a DGIWG process for routing shall implement a process description accordingly to parameters defined in <<_routing>>._*
+
 include::generic_processes/routing.adoc[]
 
-=== Geopackage
+=== Geopackage Creation
+
+*_Requirement {counter:process_req}: a DGIWG process for geopackage Creation implement a process description accordingly to parameters defined in <<_geopackage_creation>>._*
 
 include::generic_processes/geopackageCreation.adoc[]

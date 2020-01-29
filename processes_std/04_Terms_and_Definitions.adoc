@@ -2,7 +2,7 @@
 _(As applicable)_
 
 === Definitions
-For the purposes of this document, terms and definitions found in WPS 2.0 (<<Ref-1>>) apply.
+For the purposes of this document, terms and definitions found in <<OGC-WPS-2.0>> apply.
 
 === Abrevations
 [#Abr,reftext='{table-caption}']

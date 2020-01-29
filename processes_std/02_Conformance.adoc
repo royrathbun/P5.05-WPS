@@ -3,7 +3,7 @@ _(Mandatory for standards)_
 
 === Conformance classes
 
-This document establishes xx conformance classe(s):
+This document establishes 9 conformance classe(s):
 
 - DGIWG process,
 - DGIWG process profile for elevation analysis,
@@ -13,12 +13,13 @@ This document establishes xx conformance classe(s):
 - DGIWG process profile for slope analysis,
 - DGIWG process profile for helicopter landing zone,
 - DGIWG process profile for routing,
-- DGIWG process profile for geopackage creation,
+- DGIWG process profile for geopackage creation.
 
 
-_"DGIWG process"_ class define requirements for defining generic process description
-_"DGIWG generic process profile for XX"_ classes defines generic process profiles according to "DGIWG process" conformance class. Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. These generic processes profiles can be implemented by OGC WPS standards (versions 1 or 2) or possibly other geoprocessing APIs.
-Annex A lists the conformance abstract tests which shall be exercised on process profiles claiming to implement these conformance classes.
+*_"DGIWG process"_* class define requirements for defining generic process description
+
+*_"DGIWG process profile for X"_* classes define generic process profiles according to "DGIWG process" conformance class. Process profiles are blueprints for process implementations and are meant to harmonize process implementations to a certain degree. They serve as a reference for process implementations by providing a description of what the process actually does. These are defined at a generic level, meaning, these processes profiles may be implemented by OGC WPS standards (versions 1 or 2) or possibly other geoprocessing APIs.
+<<annex-a.adoc#AbstractTestSuite>> lists the conformance abstract tests which shall be exercised on process profiles claiming to implement these conformance classes.
 
 [#conf,reftext='{table-caption} {counter:table-num}']
 [cols="4",options="header"]

@@ -29,9 +29,6 @@
 
 ===== Input: Slope units
 
-[WARNING]
-is-it UOM ?
-
 	  Identifier	slope_units
 	  Title	Slope units
 	  Keywords	slope, units, degrees, percentage

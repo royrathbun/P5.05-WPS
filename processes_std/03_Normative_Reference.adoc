@@ -7,8 +7,8 @@ _(As applicable)_
 
 !===
 |ID |Title| Reference | Version
-| [1] | [#OGC-WPS-2.0]#OGC® WPS 2.0.2 Interface Standard# | OGC 14-065 | 2.0.2
-| [2] | [#OWS-Common-2.0]#OGC® OWS-Common 2.0 Implementation Specification# | 06-121r9 | 2.0.0
+| [1] [[OGC-WPS-2.0]] | [#OGC-WPS-2.0]#OGC® WPS 2.0.2 Interface Standard# | OGC 14-065 | 2.0.2
+| [2] [[OWS-Common-2.0]]| [#OWS-Common-2.0]#OGC® OWS-Common 2.0 Implementation Specification# | 06-121r9 | 2.0.0
 !===
 
 === Informative references
