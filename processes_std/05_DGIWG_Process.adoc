@@ -61,8 +61,8 @@ For convenience, detailed requirement from <<>> are repeated below:
 | Title | Title of the process, input, and output. Normally available for display to a human. | ows:Title |One (mandatory) | No channge
 | Abstract | 	Brief narrative description of a process, input, and output. Normally available for display to a human. | ows:Abstract | Zero or one (optional) Include when available and useful. | One (mandatory)
 | Keywords | Keywords that characterize a process, its inputs, and outputs. | ows:Keywords | Zero or more (optional) Include when available and useful. | Mandatory (at least one)
-| Identifier | Unambiguous identifier of a process. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/process/{process-name}.
-| Metadata | to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
+| Identifier | Unambiguous identifier of a process, input, and output. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/process/{process-name}.
+| Metadata | Reference to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metadata on the process profile.
 | Language | Language identifier for the human readable process description elements. | Character String. This language identifier shall be as specified in IETF RFC 4646. | One (mandatory) | English is mandatory in a coalition implementation (en-GB)
 | Input | Input items (arguments) of a process. | GenericInput structure, see Table 167. | Zero or more (optional) | no change
 | Output | Output items (results) of a process | GenericOutput structure, see Table 178. | One or more (mandatory) | no change
@@ -72,14 +72,14 @@ For convenience, detailed requirement from <<>> are repeated below:
 
 [#dgiwg_process_req3,reftext='{table-caption} {counter:table-num}']
 [cols="5",options="header"]
-.DGIWG generic process structure (edited from Table 19 <<OGC-WPS-2.0>>)
+.Parts of the GenericInput structure (edited from Table 19 and Table 20 <<OGC-WPS-2.0>>)
 !===
 |Name | Definition | Data type and Values | Multiplicity and use | DGIWG
-| Title | Title of the process, input, and output. Normally available for display to a human. | ows:Title |One (mandatory) | No channge
+| Title | Title of the process, input, and output. Normally available for display to a human. | ows:Title |One (mandatory) | No change
 | Abstract | 	Brief narrative description of a process, input, and output. Normally available for display to a human. | ows:Abstract | Zero or one (optional) Include when available and useful. | One (mandatory)
 | Keywords | Keywords that characterize a process, its inputs, and outputs. | ows:Keywords | Zero or more (optional) Include when available and useful. | Mandatory (at least one)
-| Identifier | Unambiguous identifier of a process. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | #HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/parameter/{parameter-name} or just parameter name ?.#
-| Metadata | to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
+| Identifier | Unambiguous identifier of a process, input, and output. | ows:Identifier Value is a URI or HTTP-URI a | One (mandatory) | #HTTP-URI shall be defined with following template http://www.dgiwg.org/service/processing/parameter/{parameter-name} or just parameter name ?.#
+| Metadata | Reference to additional metadata about this item. | ows:Metadata Allowed values are specified in Table 5. | Zero or more (optional) | It is recommended to provide metatatda on the process profile.
 | minOccurs | Minimum number of times that values for this parameter are required. | Non-negative integer; defaults to “1”, ‘0’ means the input is optional. | Zero or one (optional) | no change
 | maxOccurs  | Maximum number of times that this parameter may be present. | Non-negative integer, defaults to “1”. | Zero or more (optional) | no change
 | Input | Nested Input. | GenericInput structure, Table 19 (this table). | Zero or more (optional) | no change
@@ -87,9 +87,14 @@ For convenience, detailed requirement from <<>> are repeated below:
 
 *_Requirement {counter:process_req}: a DGIWG generic process profile shall be documented using template provided in Annex XX._*
 
-CAUTION: template to be developped
+include::generic_processes/template.adoc[]
 
-#what king of ows:metadata ?#
 
-WARNING: TBD
+*_Recommendation {counter:process_rec}: a DGIWG generic process profile should also be documented in XML as a valid wps:GenericProcess from http://schemas.opengis.net/wps/2.0._*
+
+
+
+[WARNING]
+TBD
+what king of ows:metadata ?
 recomandation for registering profile on DGIWG website/registry discussion

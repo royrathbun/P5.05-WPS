@@ -1,4 +1,4 @@
-measurement== DGIWG Processes Description (Normative)
+== DGIWG Processes Description (Normative)
 
 === Introduction
 This chapter defines DGIWG processes at a generic level. These definitions are conformant to *_"DGIWG process"_* conformance class; they may be implemented through WPS or other APIs.
