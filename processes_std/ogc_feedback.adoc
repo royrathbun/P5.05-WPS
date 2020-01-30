@@ -1,0 +1,15 @@
+= DGIWG feedback to OGC about WPS 2.0.2
+
+source: http://docs.opengeospatial.org/is/14-065/14-065.html
+
+== Issues
+=== XML examples (language)
+section 7.4
+requirement http://www.opengis.net/spec/WPS/2.0/req/native-process/model/description/language require a language to be part of the description of a process (code identifier specified in _IETF RFC 4646_). This is unclear but we assumed this  has to be done through the xml:lang attribute of each XML human readable text element.
+1) clarify this assumption
+2) none of the xml example process description add this language information
+
+=== Table  (language)
+section 7.5.2, table 19/table 20
+Identifier description for input and output parameters is inherited from table 4, requiring an "ows:Identifier Value is a URI or HTTP-URI"
+1) in practice identifiers for input/output are just "names" (DISTANCE, INPUT_GEOMETRY ... ), please clarify.
