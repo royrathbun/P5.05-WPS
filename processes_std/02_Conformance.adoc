@@ -26,15 +26,15 @@ This document establishes 9 conformance classe(s):
 .Conformance classes
 !===
 |Conformance class name |Operation or behavior | OGC WPS Conformance Test | DGIWG WPS Conformance Test
-|DGIWG process  http://www.dgiwg.org/std/geoprocessing/1.0/conf/process | DGIWG requirement y to z | - | Annex A.1
-|DGIWG process profile for elevation analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-elevationAnalysis | DGIWG requirement y to z | - | Annex A.2.1
-|DGIWG process profile for distance measurement http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-distanceMeasurement | DGIWG requirement y to z | - | Annex A.2.2
-|DGIWG process profile for range rings http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-rangeRings| DGIWG requirement y to z | - | Annex A.2.3
-|DGIWG process profile for viewshed analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-viewshedAnalysis| DGIWG requirement y to z | - | Annex A.2.4
-|DGIWG process profile for slope analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-slopeAnalysis| DGIWG requirement y to z | - | Annex A.2.5
-|DGIWG process profile for helicopter landing zone http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-hlz| DGIWG requirement y to z | - | Annex A.2.6
-|DGIWG process profile for routing http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-routing| DGIWG requirement y to z | - | Annex A.2.7
-|DGIWG process profile for geopackage creation http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-geopackageCreation| DGIWG requirement y to z | - | Annex A.2.8
+|DGIWG process  http://www.dgiwg.org/std/geoprocessing/1.0/conf/process | DGIWG requirements 1 to 4 | - | Annex A.1
+|DGIWG process profile for elevation analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-elevationAnalysis | DGIWG requirement 5 | - | Annex A.2.1
+|DGIWG process profile for distance measurement http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-distanceMeasurement | DGIWG requirement 6 | - | Annex A.2.2
+|DGIWG process profile for range rings http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-rangeRings| DGIWG requirement 7 | - | Annex A.2.3
+|DGIWG process profile for viewshed analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-viewshedAnalysis| DGIWG requirement 8 | - | Annex A.2.4
+|DGIWG process profile for slope analysis http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-slopeAnalysis| DGIWG requirement 9 | - | Annex A.2.5
+|DGIWG process profile for helicopter landing zone http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-hlz| DGIWG requirement 10 | - | Annex A.2.6
+|DGIWG process profile for routing http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-routing| DGIWG requirement 11 | - | Annex A.2.7
+|DGIWG process profile for geopackage creation http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-geopackageCreation| DGIWG requirement 12 | - | Annex A.2.8
 !===
 [WARNING]
 table to be updated accordingly to processes description
