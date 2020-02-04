@@ -22,10 +22,8 @@ The non-normative recommandations defined by this conformance class are summariz
 [cols="1,10,1",options="header"]
 .DGIWG process Non-normative Recommendations for DGIWG processes.
 !===
-|No. | Requirement | Compliance
+|No. | Recommendation | Compliance
 |{counter:process_rec_table} | a DGIWG generic process profile should also be documented in XML as a valid wps:GenericProcess from http://schemas.opengis.net/wps/2.0.| O
-|{counter:process_rec_table} | A DGIWG process should ...| O
-|{counter:process_rec_table} | ...| ...
 !===
 
 === General
