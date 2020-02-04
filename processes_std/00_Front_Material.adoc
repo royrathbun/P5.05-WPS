@@ -51,10 +51,7 @@ All questions regarding this document shall be directed to the editor or the con
 !===
 |Person |Organization | Email
 |Dimitri Sarafinof| National Institute of Geographic and Forest Information | Dimitri.Sarafinof@ign.fr
-| Xxxx Xxxx  | Xxxxx  | xxx.yyyy@zzzz.com
 !===
-
-
 
 For Document approved for public release use:
 All questions regarding this document shall be directed to the secretariat@dgiwg.org
@@ -68,9 +65,9 @@ NOTE: All personal information will be removed when an internal document is made
 |Date |Edition number |Primary clauses modified | Description
 |`2019.08.10` |0.1 | Dimitri Sarafinof| first draft from DGIWG adoc template
 |`2019.10.11` |0.2 | Dimitri Sarafinof| second draft with generic processes description
-|`2020.01.28` |0.3 | Dimitri Sarafinof| third draft with generic processes description (with feedback from Tallinn meeting) 
+|`2020.01.28` |0.3 | Dimitri Sarafinof| third draft with generic processes description (with feedback from Tallinn meeting)
 !===
 
 
-
 *iv.	Future work*
+Development of new process profiles based on submitted requirements
