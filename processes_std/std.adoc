@@ -71,7 +71,7 @@
 image::./images/DGIWG_logo.png[DGIWG Logo, 200, 200,align=center]
 
 [.text-center]
-= {docReference} + {title}
+= {docReference} - {title}
 
 [#front_page,reftext='{table-caption}']
 [cols="25,85"]
