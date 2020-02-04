@@ -14,7 +14,7 @@ Following DGIWG processes are described below:
  - routing
  - geopackage creation
 
-== Normative requirements
+=== Normative requirements
 The Normative requirements requested by this conformance class are summarized in <<dgiwg_process_profiles_req>>.
 [#dgiwg_process_profiles_req,reftext='{table-caption} {counter:table-num}']
 [cols="1,10,1",options="header"]
@@ -24,6 +24,11 @@ The Normative requirements requested by this conformance class are summarized in
 |{counter:process_req_table} | a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <<_elevation_analysis>>.| M
 |{counter:process_req_table} | a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <<_distance_measurement>>.| M
 |{counter:process_req_table} | a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <<_range_rings>>.| M
+|{counter:process_req_table} | a DGIWG process for viewshed analysis shall implement a process description accordingly to parameters defined in <<_viewshed_analysis>>.| M
+|{counter:process_req_table} | a DGIWG process for slope analysis shall implement a process description accordingly to parameters defined in <<_slope_analysis>>.| M
+|{counter:process_req_table} | a DGIWG process for helicopter landing zone shall implement a process description accordingly to parameters defined in <<_helicopter_landing_zone>>.| M
+|{counter:process_req_table} | a DGIWG process for routing shall implement a process description accordingly to parameters defined in <<_routing>>.| M
+|{counter:process_req_table} | a DGIWG process for routing shall implement a process description accordingly to parameters defined in <<_geopackage_creation>>.| M
 !===
 
 === Elevation analysis
@@ -95,8 +100,8 @@ include::generic_processes/hlz.adoc[]
 
 include::generic_processes/routing.adoc[]
 
-=== Geopackage Creation
+=== Geopackage creation
 
-*_Requirement {counter:process_req}: a DGIWG process for geopackage Creation implement a process description accordingly to parameters defined in <<_geopackage_creation>>._*
+*_Requirement {counter:process_req}: a DGIWG process for geopackage creation shall implement a process description accordingly to parameters defined in <<_geopackage_creation>>._*
 
 include::generic_processes/geopackageCreation.adoc[]
