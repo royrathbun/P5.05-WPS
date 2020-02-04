@@ -3,8 +3,8 @@
 
 ==== Generic process : Routing
 
-[WARNING]
-to be checked if conistency with OGC routing API pilot is wanted
+[NOTE]
+consistent with OGC routing API pilot is wanted
 https://app.swaggerhub.com/apis/cportele/wps-routing-api/1.0.0#/Option%20WPS/getProcessDescription
 
 	  Identifier	http://www.dgiwg.org/service/processing/process/routing
