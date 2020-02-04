@@ -14,7 +14,7 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel0">
-<li><a href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles">DGIWG – xxx + Defence Geoprocessing generic profiles</a>
+<li><a href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles">DGIWG – xxx - Defence Geoprocessing generic profiles</a>
 <ul class="sectlevel1">
 <li><a href="#_introduction">1. Introduction</a></li>
 <li><a href="#_scope">2. Scope</a></li>
@@ -42,59 +42,69 @@
 <li><a href="#_normative_requirements">6.2. Normative requirements</a></li>
 <li><a href="#_non_normative_recommendations_for_implementation">6.3. Non-Normative Recommendations for Implementation</a></li>
 <li><a href="#_general">6.4. General</a></li>
-<li><a href="#_introduction_3">6.5. Introduction</a></li>
 </ul>
 </li>
-<li><a href="#_normative_requirements_2">7. Normative requirements</a>
+<li><a href="#_dgiwg_processes_description_normative">7. DGIWG Processes Description (Normative)</a>
 <ul class="sectlevel2">
-<li><a href="#_elevation_analysis">7.1. Elevation analysis</a>
+<li><a href="#_introduction_3">7.1. Introduction</a></li>
+<li><a href="#_normative_requirements_2">7.2. Normative requirements</a></li>
+<li><a href="#_elevation_analysis">7.3. Elevation analysis</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_elevation_analysis">7.1.1. Generic process: Elevation analysis</a></li>
-<li><a href="#_process_implementation_elevation_analysis">7.1.2. Process implementation : elevation analysis</a></li>
+<li><a href="#_generic_process_elevation_analysis">7.3.1. Generic process: Elevation analysis</a></li>
+<li><a href="#_process_implementation_elevation_analysis">7.3.2. Process implementation : elevation analysis</a></li>
 </ul>
 </li>
-<li><a href="#_distance_measurement">7.2. Distance measurement</a>
+<li><a href="#_distance_measurement">7.4. Distance measurement</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_distance_measurement">7.2.1. Generic process: Distance measurement</a></li>
+<li><a href="#_generic_process_distance_measurement">7.4.1. Generic process: Distance measurement</a></li>
 </ul>
 </li>
-<li><a href="#_range_rings">7.3. Range rings</a>
+<li><a href="#_range_rings">7.5. Range rings</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_range_rings">7.3.1. Generic process : Range rings</a></li>
-<li><a href="#_process_implementation_range_rings">7.3.2. Process implementation : range rings</a></li>
+<li><a href="#_generic_process_range_rings">7.5.1. Generic process : Range rings</a></li>
+<li><a href="#_process_implementation_range_rings">7.5.2. Process implementation : range rings</a></li>
 </ul>
 </li>
-<li><a href="#_viewshed_analysis">7.4. Viewshed analysis</a>
+<li><a href="#_viewshed_analysis">7.6. Viewshed analysis</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_viewshed_analysis">7.4.1. Generic process : Viewshed analysis</a></li>
+<li><a href="#_generic_process_viewshed_analysis">7.6.1. Generic process : Viewshed analysis</a></li>
 </ul>
 </li>
-<li><a href="#_slope_analysis">7.5. Slope analysis</a>
+<li><a href="#_slope_analysis">7.7. Slope analysis</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_slope_analysis">7.5.1. Generic process : Slope analysis</a></li>
+<li><a href="#_generic_process_slope_analysis">7.7.1. Generic process : Slope analysis</a></li>
 </ul>
 </li>
-<li><a href="#_helicopter_landing_zone">7.6. Helicopter Landing Zone</a>
+<li><a href="#_helicopter_landing_zone">7.8. Helicopter Landing Zone</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_helicopter_landing_zone">7.6.1. Generic process : Helicopter landing zone</a></li>
+<li><a href="#_generic_process_helicopter_landing_zone">7.8.1. Generic process : Helicopter landing zone</a></li>
 </ul>
 </li>
-<li><a href="#_routing">7.7. Routing</a>
+<li><a href="#_routing">7.9. Routing</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_routing">7.7.1. Generic process : Routing</a></li>
+<li><a href="#_generic_process_routing">7.9.1. Generic process : Routing</a></li>
 </ul>
 </li>
-<li><a href="#_geopackage_creation">7.8. Geopackage Creation</a>
+<li><a href="#_geopackage_creation">7.10. Geopackage creation</a>
 <ul class="sectlevel3">
-<li><a href="#_generic_process_geopackage_creation">7.8.1. Generic process : Geopackage creation</a></li>
+<li><a href="#_generic_process_geopackage_creation">7.10.1. Generic process : Geopackage creation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#AbstractTestSuite">Appendix A: Abstract Test Suite</a>
+<ul class="sectlevel2">
+<li><a href="#cc_dgiwg_process">A.1. <em>DGIWG process</em> (Conformance Class)</a>
+<ul class="sectlevel3">
+<li><a href="#_tests_from_ogc">A.1.1. Tests from OGC</a></li>
+<li><a href="#_specific_tests">A.1.2. Specific tests</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#AbstractTestSuite">Appendix A: Abstract Test Suite</a></li>
-<li><a href="#GenericProfiles">Appendix B: DGIWG Generic profiles examples</a></li>
+<li><a href="#DGIWGProcessTemplate">Appendix B: DGIWG process template</a></li>
 <li><a href="#Bibliography">Appendix C: Bibliography</a></li>
 </ul>
 </div>
@@ -109,7 +119,7 @@
 </div>
 </div>
 </div>
-<h1 id="_dgiwg_xxx_defence_geoprocessing_generic_profiles" class="sect0 text-center"><a class="anchor" href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles"></a>DGIWG – xxx + Defence Geoprocessing generic profiles</h1>
+<h1 id="_dgiwg_xxx_defence_geoprocessing_generic_profiles" class="sect0 text-center"><a class="anchor" href="#_dgiwg_xxx_defence_geoprocessing_generic_profiles"></a>DGIWG – xxx - Defence Geoprocessing generic profiles</h1>
 <div class="openblock partintro">
 <div class="content">
 <table id="front_page" class="tableblock frame-all grid-all stretch">
@@ -174,24 +184,6 @@ This is a human-readable summary of the Legal Code (the full license is availabl
 </tr>
 </tbody>
 </table>
-<div class="paragraph lead">
-<p><strong>Table of Contents</strong></p>
-</div>
-<div class="paragraph">
-<p><em>(Mandatory)</em></p>
-</div>
-<div class="paragraph lead">
-<p><strong>List of Figures</strong></p>
-</div>
-<div class="paragraph">
-<p><em>(as applicable)</em></p>
-</div>
-<div class="paragraph lead">
-<p><strong>List of Tables</strong></p>
-</div>
-<div class="paragraph">
-<p><em>(as applicable)</em></p>
-</div>
 <div class="paragraph lead">
 <p><strong>Executive Summary</strong></p>
 </div>
@@ -268,11 +260,6 @@ This is a human-readable summary of the Legal Code (the full license is availabl
 <td class="tableblock halign-left valign-top"><p class="tableblock">National Institute of Geographic and Forest Information</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:Dimitri.Sarafinof@ign.fr">Dimitri.Sarafinof@ign.fr</a></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xxxx Xxxx</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Xxxxx</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:xxx.yyyy@zzzz.com">xxx.yyyy@zzzz.com</a></p></td>
-</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -309,18 +296,19 @@ NOTE: All personal information will be removed when an internal document is made
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>2019.10.11</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.2</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri Sarafinof</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">first draft with generic processes description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">second draft with generic processes description</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>2020.01.28</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.3</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dimitri Sarafinof</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">second draft with generic processes description (with feedback from Tallinn meeting)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">third draft with generic processes description (with feedback from Tallinn meeting)</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>iv.	Future work</strong></p>
+<p><strong>iv.	Future work</strong>
+Development of new process profiles based on submitted requirements</p>
 </div>
 </div>
 </div>
@@ -426,55 +414,55 @@ Following geoprocesses are defined:
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process  <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirements 1 to 4</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for elevation analysis <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-elevationAnalysis" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-elevationAnalysis</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for distance measurement <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-distanceMeasurement" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-distanceMeasurement</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 6</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for range rings <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-rangeRings" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-rangeRings</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 7</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for viewshed analysis <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-viewshedAnalysis" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-viewshedAnalysis</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 8</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.4</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for slope analysis <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-slopeAnalysis" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-slopeAnalysis</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 9</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for helicopter landing zone <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-hlz" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-hlz</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.6</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for routing <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-routing" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-routing</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 11</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.7</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG process profile for geopackage creation <a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-geopackageCreation" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-geopackageCreation</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement y to z</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG requirement 12</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Annex A.2.8</p></td>
 </tr>
@@ -687,17 +675,17 @@ table to be updated accordingly to processes description
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall additionaly provide elements according to <a href="#dgiwg_process_req2">Table 5</a> for the description of a DGIWG generic process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall additionally provide elements according to <a href="#dgiwg_process_req2">Table 5</a> for the description of a DGIWG generic process.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall additionaly provide elements according to <a href="#dgiwg_process_req3">Table 6</a> for the description of input/output parameters.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall additionally provide elements according to <a href="#dgiwg_process_req3">Table 6</a> for the description of input/output parameters.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall be documented using template provided in Annex XX.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile shall be documented using template provided in <a href="#DGIWGProcessTemplate">DGIWG process template</a>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
 </tbody>
@@ -718,25 +706,15 @@ table to be updated accordingly to processes description
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">No.</th>
-<th class="tableblock halign-left valign-top">Requirement</th>
+<th class="tableblock halign-left valign-top">Recommendation</th>
 <th class="tableblock halign-left valign-top">Compliance</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG process should &#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG generic process profile should also be documented in XML as a valid wps:GenericProcess from <a href="http://schemas.opengis.net/wps/2.0" class="bare">http://schemas.opengis.net/wps/2.0</a>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A DGIWG process should &#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">O</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
 </tr>
 </tbody>
 </table>
@@ -755,10 +733,11 @@ table to be updated accordingly to processes description
 image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </div>
 <div class="paragraph">
-<p><strong><em>Requirement 1: a DGIWG generic process profile shall satisfy requirements from <a href="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic" class="bare">http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic</a> (<a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>) requirement class.</em></strong></p>
+<p><a id="Requirement_1"></a>
+<strong><em>Requirement 1: a DGIWG generic process profile shall satisfy requirements from <a href="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic" class="bare">http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic</a> (<a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>) requirement class.</em></strong></p>
 </div>
 <div class="paragraph">
-<p>For convenience, detailed requirement from &lt;&lt;&gt;&gt; are repeated below:</p>
+<p>For convenience, detailed requirement from <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a> are repeated below:</p>
 </div>
 <table id="dgiwg_req1" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 4. WPS 2.0 requirements for generic profile requirement class (<a href="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic" class="bare">http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic</a>)</caption>
@@ -782,7 +761,8 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong><em>Requirement 2: a DGIWG generic process profile shall additionaly provide elements according to <a href="#dgiwg_process_req2">Table 5</a> for the description of a DGIWG generic process.</em></strong></p>
+<p><a id="Requirement_2"></a>
+<strong><em>Requirement 2: a DGIWG generic process profile shall additionally provide elements according to <a href="#dgiwg_process_req2">Table 5</a> for the description of a DGIWG generic process.</em></strong></p>
 </div>
 <table id="dgiwg_process_req2" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 5. DGIWG generic process structure (edited from Table 18 <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</caption>
@@ -826,17 +806,17 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguous identifier of a process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguous identifier of a process, input, and output.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Identifier Value is a URI or HTTP-URI a</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">HTTP-URI shall be defined with following template <a href="http://www.dgiwg.org/service/processing/process/{process-name}" class="bare">http://www.dgiwg.org/service/processing/process/{process-name}</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">to additional metadata about this item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference to additional metadata about this item.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Metadata Allowed values are specified in Table 5.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">It is recommended to provide metatatda on the process profile.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">It is recommended to provide metadata on the process profile.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Language</p></td>
@@ -862,10 +842,11 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong><em>Requirement 3: a DGIWG generic process profile shall additionaly provide elements according to <a href="#dgiwg_process_req3">Table 6</a> for the description of input/output parameters.</em></strong></p>
+<p><a id="Requirement_3"></a>
+<strong><em>Requirement 3: a DGIWG generic process profile shall additionaly provide elements according to <a href="#dgiwg_process_req3">Table 6</a> for the description of input/output parameters.</em></strong></p>
 </div>
 <table id="dgiwg_process_req3" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 6. DGIWG generic process structure (edited from Table 19 <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</caption>
+<caption class="title">Table 6. Parts of the GenericInput structure (edited from Table 19 and Table 20 <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a>)</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 20%;">
@@ -888,7 +869,7 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Title of the process, input, and output. Normally available for display to a human.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Title</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">No channge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No change</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Abstract</p></td>
@@ -906,14 +887,14 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguous identifier of a process.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unambiguous identifier of a process, input, and output.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Identifier Value is a URI or HTTP-URI a</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">One (mandatory)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><mark>HTTP-URI shall be defined with following template <a href="http://www.dgiwg.org/service/processing/parameter/{parameter-name}" class="bare">http://www.dgiwg.org/service/processing/parameter/{parameter-name}</a> or just parameter name ?.</mark></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Metadata</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">to additional metadata about this item.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reference to additional metadata about this item.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ows:Metadata Allowed values are specified in Table 5.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Zero or more (optional)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">It is recommended to provide metatatda on the process profile.</p></td>
@@ -942,22 +923,11 @@ image::./images/GenericProcess.png[WPS_GenericProcess,align=center]</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong><em>Requirement 4: a DGIWG generic process profile shall be documented using template provided in Annex XX.</em></strong></p>
-</div>
-<div class="admonitionblock caution">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-caution" title="Caution"></i>
-</td>
-<td class="content">
-template to be developped
-</td>
-</tr>
-</table>
+<p><a id="Requirement_4"></a>
+<strong><em>Requirement 4: a DGIWG generic process profile shall be documented using template provided in <a href="#DGIWGProcessTemplate">DGIWG process template</a>.</em></strong></p>
 </div>
 <div class="paragraph">
-<p><mark>what king of ows:metadata ?</mark></p>
+<p><strong><em>Recommendation 1: a DGIWG generic process profile should also be documented in XML as a valid wps:GenericProcess from <a href="http://schemas.opengis.net/wps/2.0" class="bare">http://schemas.opengis.net/wps/2.0</a>.</em></strong></p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -967,17 +937,20 @@ template to be developped
 </td>
 <td class="content">
 TBD
+what king of ows:metadata ?
 recomandation for registering profile on DGIWG website/registry discussion
 </td>
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>measurement== DGIWG Processes Description (Normative)</p>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_dgiwg_processes_description_normative"><a class="anchor" href="#_dgiwg_processes_description_normative"></a>7. DGIWG Processes Description (Normative)</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="_introduction_3"><a class="anchor" href="#_introduction_3"></a>6.5. Introduction</h3>
+<h3 id="_introduction_3"><a class="anchor" href="#_introduction_3"></a>7.1. Introduction</h3>
 <div class="paragraph">
 <p>This chapter defines DGIWG processes at a generic level. These definitions are conformant to <strong><em>"DGIWG process"</em></strong> conformance class; they may be implemented through WPS or other APIs.
 Following DGIWG processes are described below:</p>
@@ -1014,11 +987,8 @@ Following DGIWG processes are described below:</p>
 </ul>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_normative_requirements_2"><a class="anchor" href="#_normative_requirements_2"></a>7. Normative requirements</h2>
-<div class="sectionbody">
+<div class="sect2">
+<h3 id="_normative_requirements_2"><a class="anchor" href="#_normative_requirements_2"></a>7.2. Normative requirements</h3>
 <div class="paragraph">
 <p>The Normative requirements requested by this conformance class are summarized in <a href="#dgiwg_process_profiles_req">Table 7</a>.</p>
 </div>
@@ -1052,15 +1022,41 @@ Following DGIWG processes are described below:</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <a href="#_range_rings">Range rings</a>.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for viewshed analysis shall implement a process description accordingly to parameters defined in <a href="#_viewshed_analysis">Viewshed analysis</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for slope analysis shall implement a process description accordingly to parameters defined in <a href="#_slope_analysis">Slope analysis</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for helicopter landing zone shall implement a process description accordingly to parameters defined in <a href="#_helicopter_landing_zone">Helicopter Landing Zone</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for routing shall implement a process description accordingly to parameters defined in <a href="#_routing">Routing</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">a DGIWG process for routing shall implement a process description accordingly to parameters defined in <a href="#_geopackage_creation">Geopackage creation</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">M</p></td>
+</tr>
 </tbody>
 </table>
+</div>
 <div class="sect2">
-<h3 id="_elevation_analysis"><a class="anchor" href="#_elevation_analysis"></a>7.1. Elevation analysis</h3>
+<h3 id="_elevation_analysis"><a class="anchor" href="#_elevation_analysis"></a>7.3. Elevation analysis</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 5: a DGIWG process for elevation analysis shall implement a process description accordingly to parameters defined in  <a href="#_elevation_analysis">Elevation analysis</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_elevation_analysis"><a class="anchor" href="#_generic_process_elevation_analysis"></a>7.1.1. Generic process: Elevation analysis</h4>
+<h4 id="_generic_process_elevation_analysis"><a class="anchor" href="#_generic_process_elevation_analysis"></a>7.3.1. Generic process: Elevation analysis</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/elevationanalysis
@@ -1123,7 +1119,7 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_process_implementation_elevation_analysis"><a class="anchor" href="#_process_implementation_elevation_analysis"></a>7.1.2. Process implementation : elevation analysis</h4>
+<h4 id="_process_implementation_elevation_analysis"><a class="anchor" href="#_process_implementation_elevation_analysis"></a>7.3.2. Process implementation : elevation analysis</h4>
 <div class="paragraph">
 <p>Find below a WPS 2.0 example of the elevation analysis generic process profile.</p>
 </div>
@@ -1187,12 +1183,12 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_distance_measurement"><a class="anchor" href="#_distance_measurement"></a>7.2. Distance measurement</h3>
+<h3 id="_distance_measurement"><a class="anchor" href="#_distance_measurement"></a>7.4. Distance measurement</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 6: a DGIWG process for distance measurement shall implement a process description accordingly to parameters defined in <a href="#_distance_measurement">Distance measurement</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_distance_measurement"><a class="anchor" href="#_generic_process_distance_measurement"></a>7.2.1. Generic process: Distance measurement</h4>
+<h4 id="_generic_process_distance_measurement"><a class="anchor" href="#_generic_process_distance_measurement"></a>7.4.1. Generic process: Distance measurement</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/distancemeasurement
@@ -1305,12 +1301,12 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_range_rings"><a class="anchor" href="#_range_rings"></a>7.3. Range rings</h3>
+<h3 id="_range_rings"><a class="anchor" href="#_range_rings"></a>7.5. Range rings</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 7: a DGIWG process for range rings shall implement a process description accordingly to parameters defined in <a href="#_range_rings">Range rings</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_range_rings"><a class="anchor" href="#_generic_process_range_rings"></a>7.3.1. Generic process : Range rings</h4>
+<h4 id="_generic_process_range_rings"><a class="anchor" href="#_generic_process_range_rings"></a>7.5.1. Generic process : Range rings</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/rangerings
@@ -1399,7 +1395,7 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_process_implementation_range_rings"><a class="anchor" href="#_process_implementation_range_rings"></a>7.3.2. Process implementation : range rings</h4>
+<h4 id="_process_implementation_range_rings"><a class="anchor" href="#_process_implementation_range_rings"></a>7.5.2. Process implementation : range rings</h4>
 <div class="paragraph">
 <p>Find below a WPS 2.0 example of the range rings generic process profile.</p>
 </div>
@@ -1470,12 +1466,12 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_viewshed_analysis"><a class="anchor" href="#_viewshed_analysis"></a>7.4. Viewshed analysis</h3>
+<h3 id="_viewshed_analysis"><a class="anchor" href="#_viewshed_analysis"></a>7.6. Viewshed analysis</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 8: a DGIWG process for viewshed analysis shall implement a process description accordingly to parameters defined in <a href="#_viewshed_analysis">Viewshed analysis</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_viewshed_analysis"><a class="anchor" href="#_generic_process_viewshed_analysis"></a>7.4.1. Generic process : Viewshed analysis</h4>
+<h4 id="_generic_process_viewshed_analysis"><a class="anchor" href="#_generic_process_viewshed_analysis"></a>7.6.1. Generic process : Viewshed analysis</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/viewshed
@@ -1592,12 +1588,12 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_slope_analysis"><a class="anchor" href="#_slope_analysis"></a>7.5. Slope analysis</h3>
+<h3 id="_slope_analysis"><a class="anchor" href="#_slope_analysis"></a>7.7. Slope analysis</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 9: a DGIWG process for slope analysis shall implement a process description accordingly to parameters defined in <a href="#_slope_analysis">Slope analysis</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_slope_analysis"><a class="anchor" href="#_generic_process_slope_analysis"></a>7.5.1. Generic process : Slope analysis</h4>
+<h4 id="_generic_process_slope_analysis"><a class="anchor" href="#_generic_process_slope_analysis"></a>7.7.1. Generic process : Slope analysis</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/slope
@@ -1661,12 +1657,12 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_helicopter_landing_zone"><a class="anchor" href="#_helicopter_landing_zone"></a>7.6. Helicopter Landing Zone</h3>
+<h3 id="_helicopter_landing_zone"><a class="anchor" href="#_helicopter_landing_zone"></a>7.8. Helicopter Landing Zone</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 10: a DGIWG process for helicopter landing zone shall implement a process description accordingly to parameters defined in <a href="#_helicopter_landing_zone">Helicopter Landing Zone</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_helicopter_landing_zone"><a class="anchor" href="#_generic_process_helicopter_landing_zone"></a>7.6.1. Generic process : Helicopter landing zone</h4>
+<h4 id="_generic_process_helicopter_landing_zone"><a class="anchor" href="#_generic_process_helicopter_landing_zone"></a>7.8.1. Generic process : Helicopter landing zone</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/hlz
@@ -1756,20 +1752,20 @@ Following DGIWG processes are described below:</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_routing"><a class="anchor" href="#_routing"></a>7.7. Routing</h3>
+<h3 id="_routing"><a class="anchor" href="#_routing"></a>7.9. Routing</h3>
 <div class="paragraph">
 <p><strong><em>Requirement 11: a DGIWG process for routing shall implement a process description accordingly to parameters defined in <a href="#_routing">Routing</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_routing"><a class="anchor" href="#_generic_process_routing"></a>7.7.1. Generic process : Routing</h4>
-<div class="admonitionblock warning">
+<h4 id="_generic_process_routing"><a class="anchor" href="#_generic_process_routing"></a>7.9.1. Generic process : Routing</h4>
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-to be checked if conistency with OGC routing API pilot is wanted
+consistent with OGC routing API pilot
 <a href="https://app.swaggerhub.com/apis/cportele/wps-routing-api/1.0.0#/Option%20WPS/getProcessDescription" class="bare">https://app.swaggerhub.com/apis/cportele/wps-routing-api/1.0.0#/Option%20WPS/getProcessDescription</a>
 </td>
 </tr>
@@ -1916,12 +1912,12 @@ to be checked if conistency with OGC routing API pilot is wanted
 </div>
 </div>
 <div class="sect2">
-<h3 id="_geopackage_creation"><a class="anchor" href="#_geopackage_creation"></a>7.8. Geopackage Creation</h3>
+<h3 id="_geopackage_creation"><a class="anchor" href="#_geopackage_creation"></a>7.10. Geopackage creation</h3>
 <div class="paragraph">
-<p><strong><em>Requirement 12: a DGIWG process for geopackage Creation implement a process description accordingly to parameters defined in <a href="#_geopackage_creation">Geopackage Creation</a>.</em></strong></p>
+<p><strong><em>Requirement 12: a DGIWG process for geopackage creation shall implement a process description accordingly to parameters defined in <a href="#_geopackage_creation">Geopackage creation</a>.</em></strong></p>
 </div>
 <div class="sect3">
-<h4 id="_generic_process_geopackage_creation"><a class="anchor" href="#_generic_process_geopackage_creation"></a>7.8.1. Generic process : Geopackage creation</h4>
+<h4 id="_generic_process_geopackage_creation"><a class="anchor" href="#_generic_process_geopackage_creation"></a>7.10.1. Generic process : Geopackage creation</h4>
 <div class="literalblock">
 <div class="content">
 <pre>  Identifier	http://www.dgiwg.org/service/processing/process/geopackage
@@ -2002,39 +1998,14 @@ to be checked if conistency with OGC routing API pilot is wanted
 <div class="sect1">
 <h2 id="AbstractTestSuite"><a class="anchor" href="#AbstractTestSuite"></a>Appendix A: Abstract Test Suite</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="cc_dgiwg_process"><a class="anchor" href="#cc_dgiwg_process"></a>A.1. <em>DGIWG process</em> (Conformance Class)</h3>
+<div class="paragraph">
+<p><a href="http://www.dgiwg.org/std/geoprocessing/1.0/conf/process" class="bare">http://www.dgiwg.org/std/geoprocessing/1.0/conf/process</a></p>
+</div>
+<div class="sect3">
+<h4 id="_tests_from_ogc"><a class="anchor" href="#_tests_from_ogc"></a>A.1.1. Tests from OGC</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 8. A.1.1	Conformance level 1</caption>
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/test/case/id</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance class xxx.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour  &#8230;&#8203;</p>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG-XXX : clause 2.2</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 9. A.1.2	Test case for validity of XML response entity</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -2046,15 +2017,15 @@ to be checked if conistency with OGC routing API pilot is wanted
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The XML response entity is valid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify that a DGIWG  process is conformant to the <a href="#OGC-WPS-2.0">[OGC-WPS-2.0]</a> generic requirement class (<a href="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic" class="bare">http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic</a>)</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validate content of response entity against corresponding element declaration.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate DGIWG generic process against OGC tests for <a href="http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic" class="bare">http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic</a>.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG-XXX : clause. 10.2.5.1, p. 118</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Requirement_1">[Requirement_1]</a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -2062,39 +2033,10 @@ to be checked if conistency with OGC routing API pilot is wanted
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="_specific_tests"><a class="anchor" href="#_specific_tests"></a>A.1.2. Specific tests</h4>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. A.2.1	Conformance level 2</caption>
-<colgroup>
-<col style="width: 20%;">
-<col style="width: 80%;">
-</colgroup>
-<tbody>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">/test/case/id</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Confirm that the IUT satisfies all applicable requirements for conformance level 1.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Functional testing performed in an automated and/or manual manner. Verify the behaviour of &#8230;&#8203;</p>
-</div></div></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">DGIWG XXX: cl. 2.2</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. A.2.2	Test case for validity of XML response entity</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -2106,15 +2048,15 @@ to be checked if conistency with OGC routing API pilot is wanted
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The XML response entity is valid.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify the mandatory elements to describe a DGIWG process.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Validate content of response entity against corresponding element declaration.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate elements against <a href="#dgiwg_process_req2">Table 5</a>.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OGC DGIWG XXX: clause. 10.2.5.1, p. 118</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Requirement_2">[Requirement_2]</a></p></td>
 </tr>
 <tr>
 <th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
@@ -2122,124 +2064,107 @@ to be checked if conistency with OGC routing API pilot is wanted
 </tr>
 </tbody>
 </table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.dgiwg.org/xxx/xxx" class="bare">http://www.dgiwg.org/xxx/xxx</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify the mandatory elements to describe inputs and output of a DGIWG process.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate elements against <a href="#dgiwg_process_req3">Table 6</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Requirement_3">[Requirement_3]</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 80%;">
+</colgroup>
+<tbody>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test identifier</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.dgiwg.org/xxx/xxx" class="bare">http://www.dgiwg.org/xxx/xxx</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test purpose:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verify the mandatory elements to describe inputs and output of a DGIWG process.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test method:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Validate elements against table <a href="#dgiwg_process_req4">[dgiwg_process_req4]</a>.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Requirement:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Requirement_4">[Requirement_4]</a></p></td>
+</tr>
+<tr>
+<th class="tableblock halign-right valign-top"><p class="tableblock">Test type:</p></th>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Capability</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="GenericProfiles"><a class="anchor" href="#GenericProfiles"></a>Appendix B: DGIWG Generic profiles examples</h2>
+<h2 id="DGIWGProcessTemplate"><a class="anchor" href="#DGIWGProcessTemplate"></a>Appendix B: DGIWG process template</h2>
 <div class="sectionbody">
-<div class="listingblock">
-<div class="title">elevationAnalysis.xml</div>
+<div class="paragraph">
+<p><strong>Generic process: <em>"process name"</em></strong></p>
+</div>
+<div class="literalblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;wps:GenericProcess</span> <span class="attribute-name">xmlns:ows</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/ows/2.0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:wps</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/wps/2.0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:xlink</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/1999/xlink</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-  <span class="tag">&lt;ows:Title&gt;</span>Elevation analysis<span class="tag">&lt;/ows:Title&gt;</span>
-  <span class="tag">&lt;ows:Abstract&gt;</span> It provides lowest and highest point(s) on a given area.<span class="tag">&lt;/ows:Abstract&gt;</span>
-  <span class="tag">&lt;ows:Keywords&gt;</span>
-    <span class="tag">&lt;ows:Keyword&gt;</span>elevation<span class="tag">&lt;/ows:Keyword&gt;</span>
-    <span class="tag">&lt;ows:Keyword&gt;</span>analysis<span class="tag">&lt;/ows:Keyword&gt;</span>
-    <span class="tag">&lt;ows:Keyword&gt;</span>highest point<span class="tag">&lt;/ows:Keyword&gt;</span>
-    <span class="tag">&lt;ows:Keyword&gt;</span>lowest point<span class="tag">&lt;/ows:Keyword&gt;</span>
-  <span class="tag">&lt;/ows:Keywords&gt;</span>
-  <span class="tag">&lt;ows:Identifier&gt;</span>http://www.dgiwg.org/service/processing/process/elevationanalysis<span class="tag">&lt;/ows:Identifier&gt;</span>
- <span class="comment">&lt;!--
-
-        HTML page providing human readable description of the generic profile with examples.
-
---&gt;</span>
-  <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Area of interest<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-      Area of interest where a process will be executed. This could be a BBOX, a polygon, or any surface geometry (GM_Surface).
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>aoi<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#aoi</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Input&gt;</span>
-  <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Elevation data<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-      Digital representation of the earth's surface. Elevation data on which the process will be executed. It may be internal data (with a choice for the users) or data provided by the user itself (URI, external service, …).
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Keywords&gt;</span>
-      <span class="tag">&lt;ows:Keyword&gt;</span>elevation<span class="tag">&lt;/ows:Keyword&gt;</span>
-      <span class="tag">&lt;ows:Keyword&gt;</span>height<span class="tag">&lt;/ows:Keyword&gt;</span>
-      <span class="tag">&lt;ows:Keyword&gt;</span>Digital Surface Model<span class="tag">&lt;/ows:Keyword&gt;</span>
-      <span class="tag">&lt;ows:Keyword&gt;</span>Digital Elevation Model<span class="tag">&lt;/ows:Keyword&gt;</span>
-    <span class="tag">&lt;/ows:Keywords&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>elevationData<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#elevationData</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Input&gt;</span>
-  <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Choice of highest or lowest points<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-      Parameter indicating wether lowest points or highest points are requested.
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>analysis_type<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#analysis_type</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Input&gt;</span>
-  <span class="tag">&lt;wps:Output&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Highest or lowest points<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-    Highest or lowest points returned by the process on the provided area of interest. This may also contain metadata describing the data sources used, the vertical CRS of the result.
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>result_points<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#result_points</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Output&gt;</span>
-<span class="tag">&lt;/wps:GenericProcess&gt;</span></code></pre>
+<pre>  Identifier	"http-uri of the process"
+  Title	"process tile"
+  Keywords	"process keywords"
+  Abstract	"process abstract"
+  Metadata</pre>
 </div>
 </div>
-<div class="listingblock">
-<div class="title">distanceMeasurement.xml</div>
+<div class="paragraph">
+<p><strong>Input: "input name" (to be repeated as many a required)</strong></p>
+</div>
+<div class="literalblock">
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="xml"><span class="tag">&lt;wps:GenericProcess</span> <span class="attribute-name">xmlns:ows</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/ows/2.0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:wps</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/wps/2.0</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:xlink</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/1999/xlink</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xmlns:xsi</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.w3.org/2001/XMLSchema-instance</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xsi:schemaLocation</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/wps/2.0 http://schemas.opengis.net/wps/2.0/wps.xsd</span><span class="delimiter">&quot;</span></span><span class="tag">&gt;</span>
-  <span class="tag">&lt;ows:Title&gt;</span>Distance measurement<span class="tag">&lt;/ows:Title&gt;</span>
-  <span class="tag">&lt;ows:Abstract&gt;</span>
-    It provides the distance between two or more points.
-  <span class="tag">&lt;/ows:Abstract&gt;</span>
-  <span class="tag">&lt;ows:Keywords&gt;</span>
-    <span class="tag">&lt;ows:Keyword&gt;</span>distance<span class="tag">&lt;/ows:Keyword&gt;</span>
-  <span class="tag">&lt;/ows:Keywords&gt;</span>
-  <span class="tag">&lt;ows:Identifier&gt;</span>
-  http://www.dgiwg.org/service/processing/process/distancemeasurement
-  <span class="tag">&lt;/ows:Identifier&gt;</span>
-   <span class="comment">&lt;!--
-
-          HTML page providing human readable description of the generic profile with examples.
-
-  --&gt;</span>
-  <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/distancemeasurement.html</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>List of points<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-    List of two or more points in a given CRS. CRS may be 2D or 3D (with Z or height information).
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>points_list<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#points_list</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-    <span class="tag">&lt;/wps:Input&gt;</span>
-    <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Method of measurement<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-      Method of measurement to be used for the calculation (for example euclidean, geodesic, …). This could include Z coordinate (or height above elispoid).
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>measurement_method<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#measurement_method</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Input&gt;</span>
-  <span class="tag">&lt;wps:Input&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Unit of measure<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-    Unit of measure for the measured distance(s) to be returned.
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>uom<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#uom</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Input&gt;</span>
-  <span class="tag">&lt;wps:Output&gt;</span>
-    <span class="tag">&lt;ows:Title&gt;</span>Distance results<span class="tag">&lt;/ows:Title&gt;</span>
-    <span class="tag">&lt;ows:Abstract&gt;</span>
-    Result set containing indivual distance between each point pair and/or the sum. This should include uom..
-    <span class="tag">&lt;/ows:Abstract&gt;</span>
-    <span class="tag">&lt;ows:Identifier&gt;</span>distance_results<span class="tag">&lt;/ows:Identifier&gt;</span>
-    <span class="tag">&lt;ows:Metadata</span> <span class="attribute-name">xlink:role</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.opengis.net/spec/wps/2.0/def/process/description/documentation</span><span class="delimiter">&quot;</span></span> <span class="attribute-name">xlink:href</span>=<span class="string"><span class="delimiter">&quot;</span><span class="content">http://www.dgiwg.org/service/processing/process/elevationanalysis.html#distance_results</span><span class="delimiter">&quot;</span></span><span class="tag">/&gt;</span>
-  <span class="tag">&lt;/wps:Output&gt;</span>
-<span class="tag">&lt;/wps:GenericProcess&gt;</span></code></pre>
+<pre>  Identifier	"input name"
+  Title	"input title"
+  Keywords	"input keywords"
+  Abstract	"input abstract"
+  Metadata
+  Multiplicity	N</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>&#8230;&#8203;</p>
+</div>
+<div class="paragraph">
+<p><strong>Output: <em>"output name"</em></strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>  Identifier	"output name"
+  Title	"output title"
+  Keywords	"output keywords"
+  Abstract	"output abstract"
+  Metadata</pre>
 </div>
 </div>
 </div>
@@ -2253,7 +2178,7 @@ to be checked if conistency with OGC routing API pilot is wanted
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-01-29 18:53:12 +0100
+Last updated 2020-02-04 23:07:57 +0100
 </div>
 </div>
 <link rel="stylesheet" href="resources/stylesheets/coderay-asciidoctor.css">
