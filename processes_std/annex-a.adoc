@@ -1,48 +1,47 @@
 [appendix]
 [[AbstractTestSuite]]
-= Abstract Test Suite
-.[big]*A.1 Test module for conformance level 1*
+== Abstract Test Suite
 
-.A.1.1	Conformance level 1
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | /test/case/id
-|Test purpose: | Confirm that the IUT satisfies all applicable requirements for conformance class xxx.
-|Test method: a| Functional testing performed in an automated and/or manual manner. Verify the behaviour  ...
+[[cc_dgiwg_process]]
+=== _DGIWG process_ (Conformance Class)
+http://www.dgiwg.org/std/geoprocessing/1.0/conf/process
 
-|Requirement: |DGIWG-XXX : clause 2.2
-|Test type: |Capability
-|====================
+==== Tests from OGC
 
-.A.1.2	Test case for validity of XML response entity
 [cols=">20h,<80d",width="100%"]
 |====================
 |Test identifier | http://www.dgiwg.org/xxx/xxx
-|Test purpose: |The XML response entity is valid.
-|Test method: |Validate content of response entity against corresponding element declaration.
-|Requirement: |DGIWG-XXX : clause. 10.2.5.1, p. 118
+|Test purpose: |Verify that a DGIWG  process is conformant to the <<OGC-WPS-2.0>> generic requirement class (http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic)
+|Test method: |Validate DGIWG generic process against OGC tests for http://www.opengis.net/spec/WPS/2.0/req/native-process/model/profile/generic.
+|Requirement: | <<Requirement_1>>
 |Test type: |Capability
 |====================
 
-.[big]*A.2	Test module for conformance level 2*
+==== Specific tests
 
-.A.2.1	Conformance level 2
-[cols=">20h,<80d",width="100%"]
-|====================
-|Test identifier | /test/case/id
-|Test purpose: | Confirm that the IUT satisfies all applicable requirements for conformance level 1.
-|Test method: a| Functional testing performed in an automated and/or manual manner. Verify the behaviour of ...
-
-|Requirement: |DGIWG XXX: cl. 2.2
-|Test type: |Capability
-|====================
-
-.A.2.2	Test case for validity of XML response entity
 [cols=">20h,<80d",width="100%"]
 |====================
 |Test identifier | http://www.dgiwg.org/xxx/xxx
-|Test purpose: |The XML response entity is valid.
-|Test method: |Validate content of response entity against corresponding element declaration.
-|Requirement: |OGC DGIWG XXX: clause. 10.2.5.1, p. 118
+|Test purpose: |Verify the mandatory elements to describe a DGIWG process.
+|Test method: |Validate elements against <<dgiwg_process_req2>>.
+|Requirement: | <<Requirement_2>>
+|Test type: |Capability
+|====================
+
+[cols=">20h,<80d",width="100%"]
+|====================
+|Test identifier | http://www.dgiwg.org/xxx/xxx
+|Test purpose: |Verify the mandatory elements to describe inputs and output of a DGIWG process.
+|Test method: |Validate elements against <<dgiwg_process_req3>>.
+|Requirement: | <<Requirement_3>>
+|Test type: |Capability
+|====================
+
+[cols=">20h,<80d",width="100%"]
+|====================
+|Test identifier | http://www.dgiwg.org/xxx/xxx
+|Test purpose: |Verify the mandatory elements to describe inputs and output of a DGIWG process.
+|Test method: |Validate elements against table <<dgiwg_process_req4>>.
+|Requirement: | <<Requirement_4>>
 |Test type: |Capability
 |====================
