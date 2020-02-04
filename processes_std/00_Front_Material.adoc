@@ -1,19 +1,4 @@
 [.lead]
-*Table of Contents*
-
-_(Mandatory)_
-
-[.lead]
-*List of Figures*
-
-_(as applicable)_
-
-[.lead]
-*List of Tables*
-
-_(as applicable)_
-
-[.lead]
 *Executive Summary*
 
 _(The inclusion of an Executive Summary is the discretion of the author(s))._
