@@ -1,4 +1,4 @@
-==== Generic process: _"process name"_
+*Generic process: _"process name"_*
 
 	  Identifier	"http-uri of the process"
 	  Title	"process tile"
@@ -6,7 +6,7 @@
 	  Abstract	"process abstract"
 	  Metadata
 
-===== Input: "input name" (to be repeated as many a required)
+*Input: "input name" (to be repeated as many a required)*
 
 	  Identifier	"input name"
 	  Title	"input title"
@@ -17,7 +17,7 @@
 
 ...
 
-===== Output: _"output name"_
+*Output: _"output name"_*
 
 	  Identifier	"output name"
 	  Title	"output title"
