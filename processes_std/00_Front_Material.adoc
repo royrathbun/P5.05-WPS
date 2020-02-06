@@ -20,7 +20,7 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 | `France` | Institut National de l'Information Géographique et Forestière (IGN)
 | `Germany` | Bundeswehr Geoinformation Centre (BGIC)
 | `United States` |  National Geospatial-Intelligence Agency (NGA)
-| `United Kingdom` |  JtUser-C4ISR-Standards-Dev3
+| `United Kingdom` |  UKStratCom-DI-JUIntCy-JGI-Std3 (GBR)
 !===
 
 
