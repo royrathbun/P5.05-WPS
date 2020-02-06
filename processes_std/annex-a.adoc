@@ -45,3 +45,7 @@ http://www.dgiwg.org/std/geoprocessing/1.0/conf/process
 |Requirement: | <<Requirement_4>>
 |Test type: |Capability
 |====================
+
+[[cc_dgiwg_process_elevation_analysis]]
+=== _DGIWG process profile for elevation analysis_ (Conformance Class)
+http://www.dgiwg.org/std/geoprocessing/1.0/conf/process-elevationAnalysis
