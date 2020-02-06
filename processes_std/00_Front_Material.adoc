@@ -17,10 +17,10 @@ _(Clauses i-iv are optional, and not mandated for approval of issue, however ass
 [cols="30,205",options="header"]
 !===
 |Nation |Parent organization
-| `France` | Institut National de l'Information Géographique et Forestière (IGN)
-| `Germany` | Bundeswehr Geoinformation Centre (BGIC)
-| `United States` |  National Geospatial-Intelligence Agency (NGA)
-| `United Kingdom` |  UKStratCom-DI-JUIntCy-JGI-Std3 (GBR)
+| `France` | Institut National de l'Information Géographique et Forestière (_IGN_)
+| `Germany` | Bundeswehr Geoinformation Centre (_BGIC_)
+| `United States` |  National Geospatial-Intelligence Agency (_NGA_)
+| `United Kingdom` |  UKStratCom-DI-JUIntCy-JGI-Std3 (_GBR_)
 !===
 
 
