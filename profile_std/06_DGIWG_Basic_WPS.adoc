@@ -14,6 +14,7 @@ The Normative requirements requested by this conformance class are summarized in
 |{counter:dgiwg_basic_req_table} | a DGIWG Basic WPS server shall provide elements in the GetCapabilities response document as described in tables <<get_cap_serviceID>>, <<get_cap_serviceProvider>>, <<get_cap_OperationsMetadata>>, <<get_cap_Language>> and <<process_sum>>. | M
 |{counter:dgiwg_basic_req_table} | a DGIWG Basic WPS server shall provide lang element for all content of type LanguageString. | M
 |{counter:dgiwg_basic_req_table} |  a DGIWG Basic WPS server shall provide metadata content in a response to a "GetCapabilities" request in English language. For each element of type LanguageString, it does require for element lang to be "en-GB". | M
+|{counter:dgiwg_basic_req_table} |  a WPS server shall support service exceptions in English language. | M
 
 !===
 
@@ -58,8 +59,9 @@ image::./images/Capabilities.png[WPS_Capabilities,align=center]
 
 *_Requirement {counter:dgiwg_basic_req}: If content provided by a WFS server is classified, a DGIWG Basic WPS server shall identify the highest classification level of the content accessible through the WFS service by populating the accessConstraints element._*
 
-NOTE: for example _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-GB) and optionalty in other languages (with lang fr-CA for french (Canada)).
+*_Requirement {counter:dgiwg_basic_req}: A WPS server shall support service exceptions in English language._*
 
+NOTE: for example _title_, _abstract_ and _keywords_ elements are of type LanguageString which comprise a value (CharacterString) and an optional lang element (from RFC 4646). They have to be provided at least in english (with lang being en-GB) and optionalty in other languages (with lang fr-CA for french (Canada)).
 
 
 Following tables describes adittional requirements for filling in GetCapabilities response document.
@@ -72,11 +74,11 @@ Following tables describes adittional requirements for filling in GetCapabilitie
 |serviceType | A service type URN from a registry of services, normally used for machine-to-machine communication. | URN | One (mandatory) *_Fixed to "WPS"_* | no change
 |serviceTypeVersion | Versions of this service type implemented by this server. | Character string type, not empty | One or more (mandatory) *_Shall contain at least value 2.0.2_* | no change
 |profile | Identifier of OGC Web Service (OWS) Application Profile. | Character string type, not empty | Zero or one (optional) | One (mandatory) *_Shall contain at least one element with value http://www.dgiwg.org/std/wps/1.0/conf/basic_*
-|title | Title of this server, normally used for display to a human. | LanguageString data structure, see Figure 15 | One or more (mandatory) | no change
-|abstract | Brief narrative description of this server, normally available for display to a human. | LanguageString data structure, see Figure 15 | Zero or more (optional) | Zero or more (optional) *_A DGIWG basic WPS server shall include the following information in the abstract element of the service metadata: "This service implements the DGIWG WPS 2.0 profile version 1.0, DGIWG Basic WPS conformance class (http://www.dgiwg.org/std/wps/1.0/conf/basic)."_*
-|keywords | Unordered list of one or more commonly used or formalised word(s) or phrase(s) used to describe this serve. | See MD_Keywords class in ISO 19115 | Zero or more (optional) | #keywords are recommanded.#
+|title | Title of this server, normally used for display to a human. | LanguageString data structure, see Figure 15 | One or more (mandatory) | One human readable title is mandatory.
+|abstract | Brief narrative description of this server, normally available for display to a human. | LanguageString data structure, see Figure 15 | Zero or more (optional) | One (mandatory) *_A DGIWG basic WPS server shall include the following information in the abstract element of the service metadata: "This service implements the DGIWG WPS 2.0 profile version 1.0, DGIWG Basic WPS conformance class (http://www.dgiwg.org/std/wps/1.0/conf/basic)."_*
+|keywords | Unordered list of one or more commonly used or formalised word(s) or phrase(s) used to describe this server. | See MD_Keywords class in ISO 19115 | Zero or more (optional) | #keywords are recommanded.#
 |fees | Fees and terms for using this server, including the monetary units as specified in ISO 4217. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no fees or terms | Zero or one (optional) | #?#
-|accessConstraints | Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed | Zero or more (optional) | #?#
+|accessConstraints | Access constraints that should be observed to assure the protection of privacy or intellectual property, and any other restrictions on retrieving or using data from or otherwise using this server. | Character string type, not empty Reserved value NONE (case insensitive) shall be used to mean no constraints are imposed | Zero or more (optional) | #?# *A WPS server shall be able to report classification levels provided in the <ows:AccessConstraints> element.*
 !===
 
 
