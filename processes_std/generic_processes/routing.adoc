@@ -5,7 +5,8 @@
 
 [NOTE]
 consistent with OGC routing API pilot
-https://app.swaggerhub.com/apis/cportele/wps-routing-api/1.0.0#/Option%20WPS/getProcessDescription
+OGC® Routing Pilot ER http://docs.opengeospatial.org/per/19-041r3.html
+WPS Routing API ER http://docs.opengeospatial.org/per/19-040.html
 
 	  Identifier	http://www.dgiwg.org/service/processing/process/routing
 	  Title	Routing
