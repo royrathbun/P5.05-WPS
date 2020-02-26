@@ -1,3 +1,6 @@
+# WARNING:
+This is no more the working repository
+it has been moved to private Gitlab https://gitlab.com/dgiwg/P5-05-WPS
 # REQUIREMENT:
 
 The OGC Web Processing Service (WPS) Interface provides rules for standardizing inputs and outputs for geospatial processing services. Clients can request the execution of processes and specify how the output from the process is handled. An assessment of required processes is necessary to determine how such services can be utilized in a military environment.
