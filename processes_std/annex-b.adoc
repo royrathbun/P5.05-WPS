@@ -1,5 +1,0 @@
-[appendix]
-[[DGIWGProcessTemplate]]
-= DGIWG process template
-
-include::generic_processes/template.adoc[]
